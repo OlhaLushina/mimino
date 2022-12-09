@@ -1,0 +1,14 @@
+@include mobile {
+      max-width: 414px;
+    @content;
+  }
+
+@include tablet {
+  min-width: 1024px;
+    @content;
+  }
+
+@include desktop {
+  min-width: 1280px;
+    @content;
+  }
