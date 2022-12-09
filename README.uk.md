@@ -8,7 +8,7 @@
 1. Убедись что на компьютере установлена LTS-версия Node.js.
    [Скачай и установи](https://nodejs.org/en/) её если необходимо.
 2. Склонируй этот репозиторий.
-3. Измени имя папки с `parcel-project-template` на имя своего проекта.
+3. Измени имя папки с `mimino` на имя своего проекта.
 4. Создай новый пустой репозиторий на GitHub.
 5. Открой проект в VSCode, запусти терминал и свяжи проект с GitHub-репозиторием
    [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
@@ -79,7 +79,7 @@ Pages, в ветку `gh-pages`, каждый раз когда обновляе
 Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
 по адресу указанному в отредактированном свойстве `homepage`. Например, вот
 ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+[https://OlhaLushina.github.io/mimino](https://OlhaLushina.github.io/mimino).
 
 Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
 связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее

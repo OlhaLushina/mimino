@@ -8,7 +8,7 @@ skonfigurowania dodatkowych opcji [zobacz dokumentację](https://parceljs.org/)
 1. Upewnij się, że na komputerze zainstalowana jest wersja LTS Node.js.
    [Ściągnij i zainstaluj](https://nodejs.org/en/), jeśli jest taka potrzeba.
 2. Sklonuj to repozytorium.
-3. Zmień nazwę folderu z `parcel-project-template` na nazwę swojego projektu.
+3. Zmień nazwę folderu z `mimino` na nazwę swojego projektu.
 4. Utwórz nowe, puste repozytorium na GitHub.
 5. Otwórz projekt w VSCode, uruchom terminal i zwiąż projekt z repozytorium
    GitHub
@@ -83,7 +83,7 @@ oknie przejść do odnośnika `Details`.
 Po jakimś czasie, zazwyczaj kilku minut, działającą stronę będzie można zobaczyć
 pod adresem wskazanym w wyedytowanej właściwości `homepage`. Na przykład tu
 znajduje się odnośnik do działającej strony dla tego repozytorium
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+[https://OlhaLushina.github.io/mimino](https://OlhaLushina.github.io/mimino).
 
 Jeżeli otwiera się pusta strona, upewnij się, że w zakładce `Console` nie ma
 błędów związanych z nieprawidłowymi ścieżkami do plików projektu CSS i JS
