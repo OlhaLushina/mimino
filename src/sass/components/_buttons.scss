@@ -39,9 +39,9 @@
   }
 }
 
-// мобiльна кнопка оформлення бронювання
+//  кнопка оформлення бронювання
 
-.mob-reserv-btn {
+.reserv-btn {
   width: 384px;
   height: 64px;
   border: 1px solid #f3c653;
@@ -59,33 +59,16 @@
     background-color: #f3c653;
     color: #000000;
   }
-}
-
-// десктопна та таблет кнопка оформлення бронювання
-
-.desk-reserv-btn {
-  width: 434px;
-  height: 64px;
-  border: 1px solid #f3c653;
-  border-radius: 25px;
-  background-color: #000000;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: calc(29 / 24);
-  letter-spacing: 0.02em;
-  color: #fff;
-  &:hover,
-  &:focus {
-    background-color: #f3c653;
-    color: #000000;
+  @include tablet {
+    width: 434px;
+    font-size: 24px;
+    line-height: calc(29 / 24);
   }
 }
 
 // мобiльна кнопка оформлення бронювання для модального вiкна
 
-.mob-modal-reserv-btn {
+.modal-reserv-btn {
   width: 384px;
   height: 64px;
   border: 1px solid #f3c653;
@@ -101,6 +84,11 @@
   &:focus {
     background-color: #f3c653;
     color: #000000;
+  }
+  @include tablet {
+    width: 592px;
+    font-size: 24px;
+    line-height: calc(29 / 24);
   }
 }
 
