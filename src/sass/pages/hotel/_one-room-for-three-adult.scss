@@ -1,0 +1,48 @@
+.section {
+  padding: 32px 0;
+}
+.triple-room {
+  background-color: var(--seconadary-bg-color);
+}
+.pre-title {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--color-text-gray);
+}
+.right-pretitle {
+  text-align: right;
+  margin-bottom: 8px;
+}
+.title-logo {
+  text-align: right;
+  margin-bottom: 32px;
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: var(--color-text-logo);
+}
+.room-title {
+  text-align: right;
+  margin-bottom: 12px;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--color-text-primary);
+}
+.room-description {
+  width: 242px;
+  height: 76px;
+  font-family: var(--primary-fonts);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-dark-secondary);
+  align-items: center;
+}
