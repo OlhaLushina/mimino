@@ -1,44 +1,64 @@
+.box {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border-bottom: 2px solid tomato;
+}
+
 .section {
 padding-top: 16px;
 padding-bottom: 20px;
-}
 
-.container {
-padding-left: 15px;
-padding-right: 15px;
+@media screen and (min-width:1024px) {
+  
+  padding-top: 0;   
+  padding-bottom: 32px;
+  }
 }
 
 .about-pre-tittle {
 margin-top: 0;
 margin-bottom: 12px;
 
-font-family: 'Times New Roman';
-font-style: normal;
-font-weight: 400;
+font-family: var(--secondary-fonts);
 font-size: 20px;
 line-height: 1.15;
-color: #B4B4B4;
+color: var(--color-text-gray);
+
+@media screen and (min-width:1024px) {
+  margin-top: 120px;
+  margin-bottom: 4px; 
+
+  font-size: 32px;
+  line-height: 1.16;
+  }
 }
 
-.about-tittle {
+.about-logo {
 margin-top: 0;
 margin-bottom: 12;
 
-font-family: 'Film P3';
-font-style: normal;
+font-family: var(--logo-fonts);
 font-weight: 700;
 font-size: 40px;
 line-height: 1.08;
 letter-spacing: 0.3em;
-color: #494848;
+color: var(--color-text-logo);
+
+@media screen and (min-width:1024px) {
+  margin-bottom: 24px; 
+  
+  font-size: 64px;
+  line-height: 1.08;
+  }
 }
 
-.about-list {
-margin-top: 0;
-}
+.about-item {
+  margin-bottom: 32px;
 
-.abou-item {
-margin-bottom: 32px;
+  @media screen and (min-width:1024px) {
+  width: 100%;  
+  }
 }
 
 .tables {
@@ -47,27 +67,45 @@ align-items: center;
 }
 
 .about-text {
-width: 258px;
-margin-bottom: 28px;
+  width: 258px;
+  margin-bottom: 28px;
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 1.25;
-letter-spacing: 0.02em;
-color: #5F5F5F;
+  font-family: var(--primary-fonts);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-dark-secondary);
+
+@media screen and (min-width:1024px) {
+  font-size: 16px;
+  line-height: 1.25;
+  width: 439px;
+  margin-bottom: 142px;
+  }
 }
 
 .text {
 margin-left: 20px;
+margin-bottom: 0;
 width: 163px;
-color: #C79002;
+color: var(--color-text-brown);
+
+@media screen and (min-width:1024px) {
+  margin-left: 48px;
+  width: 312px;
+  }
 }
 
 .interior {
 margin-left: auto;
 
+@media screen and (min-width:1024px) {
+  position: absolute;
+  bottom: -82px;
+  right: 112px;
+  z-index: 11;
+  }
 }
 
 .restaurant {
@@ -76,5 +114,10 @@ border-radius: 2px;
 }
 
 .slider {
-margin-left: 84px;
+margin-left: 69px;
+
+@media screen and (min-width:1024px) {
+  margin-left: 536px;
+  margin-right: 294px;
+  }
 }
