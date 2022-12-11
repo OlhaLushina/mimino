@@ -1,0 +1,80 @@
+.section {
+padding-top: 16px;
+padding-bottom: 20px;
+}
+
+.container {
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.about-pre-tittle {
+margin-top: 0;
+margin-bottom: 12px;
+
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.15;
+color: #B4B4B4;
+}
+
+.about-tittle {
+margin-top: 0;
+margin-bottom: 12;
+
+font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.08;
+letter-spacing: 0.3em;
+color: #494848;
+}
+
+.about-list {
+margin-top: 0;
+}
+
+.abou-item {
+margin-bottom: 32px;
+}
+
+.tables {
+display: flex;
+align-items: center;
+}
+
+.about-text {
+width: 258px;
+margin-bottom: 28px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #5F5F5F;
+}
+
+.text {
+margin-left: 20px;
+width: 163px;
+color: #C79002;
+}
+
+.interior {
+margin-left: auto;
+
+}
+
+.restaurant {
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
+}
+
+.slider {
+margin-left: 84px;
+}
