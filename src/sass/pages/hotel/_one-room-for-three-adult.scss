@@ -1,6 +1,9 @@
 .section {
   padding: 32px 0;
 }
+.outline {
+  outline: 2px solid tomato;
+}
 .triple-room {
   background-color: var(--seconadary-bg-color);
 }
@@ -27,7 +30,7 @@
 }
 .room-title {
   text-align: right;
-  margin-bottom: 12px;
+  //margin-bottom: 12px;
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
@@ -36,13 +39,30 @@
   color: var(--color-text-primary);
 }
 .room-description {
-  width: 242px;
-  height: 76px;
+  // width: 242px;
+  // height: 76px;
   font-family: var(--primary-fonts);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--color-text-dark-secondary);
-  align-items: center;
+  margin: 12px 74px 32px 98px;
+}
+.appartment {
+  outline: 2px solid tomato;
+  margin-bottom: 32px;
+}
+.slider {
+  margin-left: 130px;
+  margin-bottom: 72px;
+  outline: 2px solid tomato;
+}
+
+.button-item:first-child {
+  margin-bottom: 16px;
+}
+.button {
+  display: block;
+  margin: 0 auto;
 }
