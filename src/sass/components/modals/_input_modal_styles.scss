@@ -1,4 +1,4 @@
-// клас для iнпуту без галочки
+// клас для iнпуту
 // ---------------------------------------------------------------
 .modal-input {
   width: 100%;
@@ -14,6 +14,7 @@
   line-height: calc(23 / 20);
   letter-spacing: 0.05em;
   color: var(--color-text-middlebrown);
+  background-color: transparent;
 
   @include tablet {
     max-width: 288px;
@@ -24,12 +25,14 @@
 }
 // --------------------------------------------------------
 
-// класи для інпуту за галочками. необхідно буде інпут обгорнути у div з класом ".input-wrap-after":
-// <div class="input-wrap-after">
-//    <input class= 'modal-input-after'/>
+// класи для селекту. необхідно буде селект обгорнути у div з класом ".select-wrap":
+// <div class="select-wrap">
+//    <select class= 'modal-select'>
+//    <select/>
 // <div/>
 // -----------------------------------------
-.modal-input-after {
+.modal-select {
+  appearance: none;
   width: 100%;
   height: 54px;
   padding-left: 12px;
@@ -43,6 +46,7 @@
   line-height: calc(23 / 20);
   letter-spacing: 0.05em;
   color: var(--color-text-middlebrown);
+  background-color: transparent;
 
   @include tablet {
     max-width: 288px;
@@ -52,7 +56,7 @@
   }
 }
 
-.input-wrap-after {
+.select-wrap {
   display: flex;
   align-items: center;
   &::after {
@@ -63,6 +67,7 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     margin-left: -44px;
+    pointer-events: none;
   }
 }
 // ------------------------------------------------------------------
