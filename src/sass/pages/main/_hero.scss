@@ -16,35 +16,35 @@
   //   background-image: url(..//..//../images/mobile/homepage/main-hero-2x-mob.jpg);
   // }
 
-  // @include tablet {
-  //   background-image: url(..//..//../images/tablet/homepage/main-hero-tab.jpg);
-  // }
+  @include tablet {
+    background-image: url(..//..//../images/tablet/homepage/main-hero-tab.jpg);
+    max-width: 1024px;
+    // @include retina {
+    //   background-image: url(..//..//../images/tablet/homepage/main-hero-2x-tab.jpg);
+    // }
+  }
 
-  // @include retina {
-  //   background-image: url(..//..//../images/tablet/homepage/main-hero-2x-tab.jpg);
-  // }
-
-  // @include desktop {
-  //   background-image: url(..//..//../images/desktop/homepage/main-hero.jpg);
-
-  //   @include retina {
-  //     background-image: url(..//..//../images/desktop/homepage/main-hero-2x.jpg);
-  //   }
-  // }
+  @include desktop {
+    background-image: url(..//..//../images/desktop/homepage/main-hero.jpg);
+    max-width: 1280px;
+    // @include retina {
+    //   background-image: url(..//..//../images/desktop/homepage/main-hero-2x.jpg);
+    // }
+  }
 }
 
 .hero__container {
   position: relative;
+
+  // @include tablet {
+  //   padding: 188px ;
+  // }
+
+    // @include desktop {
+    // }
 }
 
-// @include tablet {
-//   padding: 118px 0;
-// }
 
-// @include desktop {
-//   padding: 200px 0px;
-//   height: 600px;
-// }
 
 .hero__title {
   font-family: var(--logo-fonts);
@@ -57,6 +57,11 @@
   text-transform: uppercase;
 
   margin-bottom: 24px;
+
+  @include tablet {
+    font-size: 128px;
+    line-height: calc(138 / 128);
+  }
 }
 
 .hero__undertitile {
@@ -67,6 +72,11 @@
   color: var(--color-text-light);
 
   margin-bottom: 40px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
 }
 
 .hero__text {
@@ -78,10 +88,22 @@
   color: var(--color-text-light);
 
   margin-bottom: 113px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+  }
 }
 
 .hero__list {
   display: flex;
   gap: 23px;
-  margin-top: 61px;
+  margin-left: 15px;
+
+  @include tablet {
+    margin-left: 48px;
+}
+@include desktop {
+position: absolute;
+}
 }
