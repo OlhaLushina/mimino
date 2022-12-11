@@ -12,24 +12,24 @@
   background-position: center;
   background-size: cover;
 
-  // @include retina {
-  //   background-image: url(..//..//../images/mobile/homepage/main-hero-2x-mob.jpg);
-  // }
+  @include retina {
+    background-image: url(..//..//../images/mobile/homepage/main-hero-2x-mob.jpg);
+  }
 
   @include tablet {
     background-image: url(..//..//../images/tablet/homepage/main-hero-tab.jpg);
     max-width: 1024px;
-    // @include retina {
-    //   background-image: url(..//..//../images/tablet/homepage/main-hero-2x-tab.jpg);
-    // }
+    @include retina {
+      background-image: url(..//..//../images/tablet/homepage/main-hero-2x-tab.jpg);
+    }
   }
 
   @include desktop {
     background-image: url(..//..//../images/desktop/homepage/main-hero.jpg);
     max-width: 1280px;
-    // @include retina {
-    //   background-image: url(..//..//../images/desktop/homepage/main-hero-2x.jpg);
-    // }
+    @include retina {
+      background-image: url(..//..//../images/desktop/homepage/main-hero-2x.jpg);
+    }
   }
 }
 
