@@ -1,14 +1,17 @@
-@include mobile {
-      max-width: 414px;
+@mixin mobile {
+  @media screen and (min-width: 414px) {
     @content;
   }
-
-@include tablet {
-  min-width: 1024px;
+}
+  
+@mixin tablet {
+  @media screen and (min-width: 1024px) {
     @content;
   }
-
-@include desktop {
-  min-width: 1280px;
+}
+  
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
     @content;
   }
+}
