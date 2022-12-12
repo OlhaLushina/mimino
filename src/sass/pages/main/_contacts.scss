@@ -6,6 +6,9 @@
   @include tablet {
     padding-top: 56px;
     padding-bottom: 40px;
+
+    display: flex;
+    gap: 110px;
   }
 }
 
@@ -174,4 +177,12 @@
 
 .location-icon {
   margin-right: 10px;
+}
+
+.right-colum {
+  @include tablet {
+    width: 552px;
+    height: 412px;
+    background-color: red;
+  }
 }
