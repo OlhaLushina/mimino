@@ -1,3 +1,14 @@
+.section-contact {
+  background-color: var(--primary-bg-color);
+  padding-top: 36px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+}
+
 .logo-contact {
   font-family: 'Film P3';
   font-style: normal;
@@ -10,12 +21,6 @@
 
   width: 127px;
   height: 43px;
-}
-
-.section-contact {
-  background-color: var(--primary-bg-color);
-  padding-bottom: 32px;
-  padding-top: 36px;
 }
 
 .contact-sub-text {
