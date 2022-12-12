@@ -1,11 +1,21 @@
-.logo {
-  color: red;
-  display: block;
+.logo-contact {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.06;
+  letter-spacing: 0.3em;
+  color: var(--color-text-logo);
   margin-bottom: 12px;
+
+  width: 127px;
+  height: 43px;
 }
 
 .section-contact {
   background-color: var(--primary-bg-color);
+  padding-bottom: 32px;
+  padding-top: 36px;
 }
 
 .contact-sub-text {
@@ -120,7 +130,7 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.01em;
-  color: #494848;
+  color: var(--color-text-logo);
 
   margin-left: 113px;
   padding: 8px 33px 7px 10px;
