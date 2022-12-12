@@ -1,0 +1,47 @@
+.footer {
+  background-color: var(--footer-bg-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  font-family: var(--logo-fonts);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: var(--color-text-accent);
+  @include mobile {
+    font-size: 40px;
+  }
+}
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.nav-footer-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.menu-link {
+  font-family: var(--primary-fonts);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-text-accent);
+}
+.soc-list {
+  display: flex;
+  gap: 20px;
+}
+.soc-item {
+}
+.soc-icon {
+}
