@@ -34,19 +34,25 @@
   margin-bottom: 16px;
 }
 
+.area-restoran {
+  background-color: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  width: 144px;
+  height: 40px;
+}
+
 .number-restoran {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: var(--color-text-logo);
-  background-color: #ffffff;
-  border: 0.5px solid #f3c653;
-  border-radius: 2px;
+  margin-bottom: 10px;
 
-  width: 144px;
-  height: 40px;
-  //   padding: 8px 8px 11px 40px;
+  display: flex;
+  align-items: center;
 }
 
 .svg-phone {
