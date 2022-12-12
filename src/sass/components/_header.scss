@@ -1,6 +1,10 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 30px;
+  padding-top: 17px;
+  padding-bottom: 31px;
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 33px;
+  }
 }
 .header_container {
   display: block;
@@ -19,8 +23,8 @@
   font-size: 36px;
   line-height: calc(39 / 36);
   letter-spacing: 0.3em;
-  //   color: var(--color-text-light);
-  color: #000;
+  color: var(--color-text-light);
+
   @include tablet {
     font-size: 40px;
     line-height: calc(43 / 40);
@@ -33,7 +37,7 @@
 .header-list-item {
 }
 .hotel-list-link,
-.rest-list-link {
+.rest-header-link {
   font-family: var(--primary-fonts);
   font-weight: 500;
   font-size: 16px;
@@ -82,8 +86,7 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
-  //   color: var(--color-text-light);
-  color: #000;
+  color: var(--color-text-light);
 }
 .header-phone-wrap {
   @include tablet {
@@ -126,13 +129,3 @@
     margin-left: 60px;
   }
 }
-// .header-soc-item {
-//   display: none;
-//   @include desktop {
-//     display: flex;
-//     &:not(:last-child) {
-//       margin-right: 23px;
-//     }
-
-//   }
-// }
