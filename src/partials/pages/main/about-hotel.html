@@ -1,87 +1,99 @@
-<section>
-  <h2 class="visually-hidden">About our hotel</h2>
-  <h3>Amet minim mollit non</h3>
-  <h4>mimino</h4>
-  <p>
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit. Exercitation veniam
-    consequat sunt nostrud amet.
-  </p>
-  <img
-    src="/src/images/mobile/homepage/modern-apartment-with-bedroom-mob.jpg"
-    alt="апартаменти"
-    width="244"
-  />
-  <p>
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit. Exercitation veniam
-    consequat sunt nostrud amet.
-  </p>
-  <img
-    src="/src/images/mobile/homepage/hotel-hall-mob.jpg"
-    alt="хол в готелі"
-    width="200"
-  />
-  <ul>
-    <li>
-      <picture>
-        <source
-          srcset="
-            /src/images/desktop/homepage/bed-decoration.jpg    1x,
-            /src/images/desktop/homepage/bed-decoration-2x.jpg 2x
-          "
-          media="(min-width: 414px)"
-        />
-        <source
-          srcset="
-            /src/images/tablet/homepage/bed-decoration-2x-tab.jpg,
-            /src/images/tablet/homepage/bed-decoration-2x-tab.jpg 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            /src/images/desktop/homepage/bed-decoration.jpg    1x,
-            /src/images/desktop/homepage/bed-decoration-2x.jpg 2x
-          "
-          media="(min-width: 414px)"
-        />
-        <img
-          src="/src/images/desktop/homepage/bed-decoration.jpg"
-          alt="скручені рушнички"
-          width="245"
-        />
-      </picture>
-    </li>
-    <li>
-      <picture>
-        <source
-          srcset="
-            /src/images/desktop/homepage/hotel-registration.jpg    1x,
-            /src/images/desktop/homepage/hotel-registration-2x.jpg 2x
-          "
-          media="(min-width: 414px)"
-        />
-        <source
-          srcset="
-            /src/images/tablet/homepage/hotel-registration-tab.jpg,
-            /src/images/tablet/homepage/hotel-registration-2x-tab.jpg 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            /src/images/mobile/homepage/hotel-registration-mob.jpg    1x,
-            /src/images/mobile/homepage/hotel-registration-2x-mob.jpg 2x
-          "
-          media="(min-width: 414px)"
-        />
-        <img
-          src="/src/images/mobile/homepage/hotel-registration-mob.jpg"
-          alt="реєстрація"
-          width="245"
-        />
-      </picture>
-    </li>
-  </ul>
+<section class="about-hotel section">
+  <div class="container">
+    <h2 class="visually-hidden">About our hotel</h2>
+    <div class="card-list">
+      <div class="card-text">
+        <h3 class="card-text__title">Amet minim mollit non</h3>
+        <h4 class="card-text__mimino">міміно</h4>
+        <p class="card-text__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <img
+        class="card-list__img"
+        src="/src/images/mobile/homepage/modern-apartment-with-bedroom-mob.jpg"
+        alt="апартаменти"
+        width="244"
+      />
+    </div>
+    <div class="card-list-hotel">
+      <p class="card-list-hotel__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <img
+        class="card-list-hotel__img"
+        src="/src/images/mobile/homepage/hotel-hall-mob.jpg"
+        alt="хол в готелі"
+        width="200"
+      />
+    </div>
+    <div>
+      <ul class="slider">
+        <li class="slider__item">
+          <picture>
+            <source
+              srcset="
+                /src/images/desktop/homepage/bed-decoration.jpg    1x,
+                /src/images/desktop/homepage/bed-decoration-2x.jpg 2x
+              "
+              media="(min-width: 414px)"
+            />
+            <source
+              srcset="
+                /src/images/tablet/homepage/bed-decoration-2x-tab.jpg,
+                /src/images/tablet/homepage/bed-decoration-2x-tab.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                /src/images/desktop/homepage/bed-decoration.jpg    1x,
+                /src/images/desktop/homepage/bed-decoration-2x.jpg 2x
+              "
+              media="(min-width: 414px)"
+            />
+            <img
+              src="/src/images/desktop/homepage/bed-decoration.jpg"
+              alt="скручені рушнички"
+              width="245"
+            />
+          </picture>
+        </li>
+        <li class="slider__item">
+          <picture>
+            <source
+              srcset="
+                /src/images/desktop/homepage/hotel-registration.jpg    1x,
+                /src/images/desktop/homepage/hotel-registration-2x.jpg 2x
+              "
+              media="(min-width: 414px)"
+            />
+            <source
+              srcset="
+                /src/images/tablet/homepage/hotel-registration-tab.jpg,
+                /src/images/tablet/homepage/hotel-registration-2x-tab.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                /src/images/mobile/homepage/hotel-registration-mob.jpg    1x,
+                /src/images/mobile/homepage/hotel-registration-2x-mob.jpg 2x
+              "
+              media="(min-width: 414px)"
+            />
+            <img
+              src="/src/images/mobile/homepage/hotel-registration-mob.jpg"
+              alt="реєстрація"
+              width="245"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
