@@ -82,6 +82,7 @@
 }
 
 .number-restoran {
+  font-family: var(--primary-fonts);
   display: block;
   font-weight: 400;
   font-size: 14px;
@@ -171,11 +172,16 @@
 
   @include tablet {
     margin-left: 0px;
-    margin-bottom: 32px;
+    margin-bottom: 0px;
     width: 285px;
     height: 56px;
     padding: 9px 10px 7px 10px;
   }
+}
+
+.adress-text {
+  font-weight: 400;
+  font-family: var(--primary-fonts);
 }
 
 .adress-wrap {
