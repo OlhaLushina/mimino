@@ -1,36 +1,36 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
   --color-text-primary: #000000;
-  --color-text-dark-secondary: #5F5F5F;
-  --color-text-gray: #B4B4B4;
-  --color-text-brown: #C79002;
-  --color-text-light: #FFFFFF;
-  --color-text-accent: #F3C653;
-  --color-text-address: #E5E5E5;
+  --color-text-dark-secondary: #5f5f5f;
+  --color-text-gray: #b4b4b4;
+  --color-text-brown: #c79002;
+  --color-text-light: #ffffff;
+  --color-text-accent: #f3c653;
+  --color-text-address: #e5e5e5;
   --color-text-logo: #494848;
-  --footer-bg-color: #0E0C07;
-  --primary-bg-color: #FFFDEE;
-  --seconadary-bg-color: #F0ECD6;
-  --color-text-lightgray: #DADADA;
-  --color-text-lightbrown: #7A7A7A;
+  --footer-bg-color: #0e0c07;
+  --primary-bg-color: #fffdee;
+  --seconadary-bg-color: #f0ecd6;
+  --color-text-lightgray: #dadada;
+  --color-text-lightbrown: #7a7a7a;
   --color-text-middlegray: #bababa;
   --color-text-middlebrown: #808080;
-  --logo-fonts: "Logofont", sans-serif;
-  --primary-fonts: "Montserrat", sans-serif;
-  --secondary-fonts: "Timesstand", sans-serif;
-  --secondary-bold-fonts: "Timesbold", sans-serif;
+  --logo-fonts: 'Logofont', sans-serif;
+  --primary-fonts: 'Montserrat', sans-serif;
+  --secondary-fonts: 'Timesstand', sans-serif;
+  --secondary-bold-fonts: 'Timesbold', sans-serif;
 }
 
 @font-face {
-  font-family: "Logofont";
+  font-family: 'Logofont';
   src: url(../fonts/FilmP3Bold.ttf);
 }
 @font-face {
-  font-family: "Timesstand";
+  font-family: 'Timesstand';
   src: url(../fonts/TimesNewRomanMTStd.ttf);
 }
 @font-face {
-  font-family: "Timesbold";
+  font-family: 'Timesbold';
   src: url(../fonts/TimesNewRomanMTStd-Bold.ttf);
 }
 body {
@@ -140,14 +140,14 @@ img {
 }
 
 .card-text__title {
-  font-family: "Times New Roman";
+  font-family: 'Times New Roman';
   font-size: 20px;
   line-height: 1.15;
   color: var(--color-text-gray);
 }
 
 .card-text__mimino {
-  font-family: "Film P3";
+  font-family: 'Film P3';
   font-weight: 700;
   font-size: 40px;
   line-height: 1.075;
@@ -156,7 +156,7 @@ img {
 }
 
 .card-text__text {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -176,7 +176,10 @@ img {
   background: var(--color-text-lightgray);
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .card-list__img {
     background-image: url(/src/images/mobile/homepage/modern-apartment-with-bedroom-2x-mob.jpg);
   }
@@ -186,7 +189,10 @@ img {
     background-image: url(/src/images/tablet/homepage/modern-apartment-with-bedroom-tab.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (min-resolution: 192dpi),
+  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .card-list__img {
     background-image: url(/src/images/tablet/homepage/modern-apartment-with-bedroom-2x-tab.jpg);
   }
@@ -196,7 +202,10 @@ img {
     background-image: url(/src/images/desktop/homepage/modern-apartment-with-bedroom.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .card-list__img {
     background-image: url(/src/images/desktop/homepage/modern-apartment-with-bedroom-2x.jpg);
   }
@@ -207,7 +216,7 @@ img {
 }
 
 .card-list-hotel__text {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -228,7 +237,10 @@ img {
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .card-list-hotel__img {
     background-image: url(/src/images/mobile/homepage/hotel-hall-2x-mob.jpg);
   }
@@ -238,7 +250,10 @@ img {
     background-image: url(/src/images/tablet/homepage/hotel-hall-tab.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (min-resolution: 192dpi),
+  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .card-list-hotel__img {
     background-image: url(/src/images/tablet/homepage/hotel-hall-2x-tab.jpg);
   }
@@ -248,7 +263,10 @@ img {
     background-image: url(/src/images/desktop/homepage/hotel-hall.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .card-list-hotel__img {
     background-image: url(/src/images/desktop/homepage/hotel-hall-2x.jpg);
   }
@@ -256,4 +274,4 @@ img {
 
 .slider {
   display: flex;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
