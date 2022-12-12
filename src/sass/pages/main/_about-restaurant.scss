@@ -1,32 +1,36 @@
 .box {
   width: 100%;
   height: 200px;
-  position: relative;
+  
   border-bottom: 2px solid tomato;
 }
 
 .section {
-padding-top: 16px;
-padding-bottom: 20px;
+  position: relative;
 
-@media screen and (min-width:1024px) {
-  
-  padding-top: 0;   
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+@include tablet {
+  padding-top: 120px;   
   padding-bottom: 32px;
+  }
+
+  @include desktop {
+  padding-bottom: 50px;
   }
 }
 
-.about-pre-tittle {
-margin-top: 0;
-margin-bottom: 12px;
+.about-restaurant-pre-tittle {
+  margin-bottom: 12px;
 
-font-family: var(--secondary-fonts);
-font-size: 20px;
-line-height: 1.15;
-color: var(--color-text-gray);
+  font-family: var(--secondary-fonts);
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--color-text-gray);
 
-@media screen and (min-width:1024px) {
-  margin-top: 120px;
+@include tablet {
+  margin-top: 0;
   margin-bottom: 4px; 
 
   font-size: 32px;
@@ -34,39 +38,38 @@ color: var(--color-text-gray);
   }
 }
 
-.about-logo {
-margin-top: 0;
-margin-bottom: 12;
+.about-restaurant-logo {
+  margin-top: 0;
+  margin-bottom: 12px;
 
-font-family: var(--logo-fonts);
-font-weight: 700;
-font-size: 40px;
-line-height: 1.08;
-letter-spacing: 0.3em;
-color: var(--color-text-logo);
+  font-family: var(--logo-fonts);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: var(--color-text-logo);
 
-@media screen and (min-width:1024px) {
+@include tablet {
   margin-bottom: 24px; 
   
   font-size: 64px;
-  line-height: 1.08;
   }
 }
 
-.about-content {
+.about-restaurant-content {
   margin-bottom: 32px;
 
-  @media screen and (min-width:1024px) {
+  @include tablet {
   width: 100%;  
   }
 }
 
 .tables {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.about-text {
+.about-restaurant-text {
   width: 258px;
   margin-bottom: 28px;
 
@@ -77,59 +80,65 @@ align-items: center;
   letter-spacing: 0.02em;
   color: var(--color-text-dark-secondary);
 
-@media screen and (min-width:1024px) {
+@include tablet {
   font-size: 16px;
-  line-height: 1.25;
   width: 439px;
   margin-bottom: 142px;
+  }
+
+  @include desktop {
+  width: 518px;
+  margin-bottom: 162px;
   }
 }
 
 .text {
-margin-left: 20px;
-margin-bottom: 0;
-width: 163px;
-color: var(--color-text-brown);
+  margin-left: 20px;
+  margin-bottom: 0;
+  width: 163px;
+  color: var(--color-text-brown);
 
-@media screen and (min-width:1024px) {
+@include tablet {
   margin-left: 48px;
   width: 312px;
   }
-}
 
-.interior {
-margin-left: auto;
-
-@media screen and (min-width:1024px) {
-  position: absolute;
-  top: 100%;
-  right: 112px;
-  z-index: 11;
-  }
-}
-
-.restaurant {
-box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-border-radius: 2px;
-
-@media screen and (min-width:1024px) {
+  @include desktop{
   margin-left: 32px;
   }
 }
 
-.slider {
-margin-left: 69px;
+.about-restaurant-interior {
+  margin-left: auto;
 
-@media screen and (min-width:1024px) {
-  margin-left: 536px;
-  margin-right: 294px;
+@include tablet {
+  position: absolute;
+  top: -5%;
+  right: 112px;
+  z-index: 11;
+  margin-left: 0;
+  }
+
+  @include desktop {
+  right: 180px;
+  }
+}
+
+.about-restaurant-photo {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.about-restaurant-tables {
+
+  @include tablet {
+  margin-left: 32px;
   }
 }
 
 .your-class {
   display: flex;
   width: 428px;
-  height: 194px;
   margin-left: auto;
   margin-right: 45px;
 }
