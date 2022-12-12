@@ -109,27 +109,25 @@ img {
 }
 @media screen and (min-width: 414px) {
   .about-hotel {
-    width: 414px;
-    height: 1191px;
     left: 0px;
   }
 }
 @media screen and (min-width: 1024px) {
   .about-hotel {
-    width: 1024px;
-    height: 1238px;
     left: 0px;
     top: 2578px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about-hotel {
-    width: 1280px;
-    height: 1275px;
     left: 0px;
     top: 2615px;
     border: 1px solid #000000;
   }
+}
+
+.container-geometry {
+  position: relative;
 }
 
 .visually-hidden {

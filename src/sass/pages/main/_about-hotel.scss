@@ -2,30 +2,31 @@
   background: var(--primary-bg-color);
 
   @media screen and (min-width: 414px) {
-    width: 414px;
-    height: 1191px;
+    // width: 414px;
+    // height: 1191px;
     left: 0px;
     // top: 2666px;
   }
 
   @media screen and (min-width: 1024px) {
-    width: 1024px;
-    height: 1238px;
+    // width: 1024px;
+    // height: 1238px;
     left: 0px;
     top: 2578px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-    height: 1275px;
+    // width: 1280px;
+    // height: 1275px;
     left: 0px;
     top: 2615px;
     border: 1px solid #000000;
   }
 }
 
-// .container {
-// }
+.container-geometry {
+  position: relative;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
