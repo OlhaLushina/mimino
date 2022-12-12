@@ -1,4 +1,4 @@
-.hero {
+.rest-hero {
   max-width: 414px;
   height: 740px;
 
@@ -36,7 +36,7 @@
   }
 }
 
-.hero__title {
+.rest-hero__title {
   font-family: var(--logo-fonts);
   font-weight: 700;
   font-size: 96px;
@@ -54,7 +54,7 @@
   }
 }
 
-.hero__undertitile {
+.rest-hero__undertitile {
   font-weight: 600;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -71,7 +71,7 @@
   }
 }
 
-.hero__text {
+.rest-hero__text {
   font-family: var(--secondary-fonts);
   font-weight: 700;
   font-size: 32px;
@@ -87,7 +87,7 @@
   }
 }
 
-.hero__list {
+.rest-hero__list {
   display: flex;
   gap: 23px;
   margin-left: 15px;
