@@ -3,10 +3,27 @@
    padding-right: 15px;
    padding-top: 32px;
    padding-top: 32px;
-}
+   margin: 0 auto;
+   width: 100%;
+
+ 
+   @media screen and (min-width:414px) {
+   max-width: 414px;
+   } 
+ 
+   @media screen and (min-width:1024px) {
+   max-width: 1024px;
+   }
+ 
+   @media screen and (min-width:1280px) {
+   max-width: 1280px;
+   margin-left: auto;
+   margin-right: auto;
+   }}
 
 .one-room-for-two {
    background: var(--primary-bg-color);
+   background: #FFFDEE;
 }
 
 .one-room-for-two-info {
@@ -19,8 +36,20 @@
    font-size: 20px;
    line-height: 1.15;
    color: var(--color-text-gray);
-   width: 190px;;
-margin-right: 194px;
+   width: 190px;
+   margin-right: 194px;
+
+@media screen and (min-width:1024px) {
+   font-size: 32px;
+   line-height: 1.16;
+   margin-right: auto;
+   }
+ 
+   @media screen and (min-width:1280px) {
+      font-size: 32px;
+      line-height: 1.16;
+      margin-right: auto;
+   }
 }
 
 .one-room-for-two-subtitle {
@@ -31,8 +60,17 @@ margin-right: 194px;
    letter-spacing: 0.3em;
    color: var(--color-text-logo);
    margin-top: 8px;
-margin-right: 257px;
-}
+   margin-right: 257px;
+  
+@media screen and (min-width:1024px) {
+   font-size: 64px;
+   margin-right: 26px;
+   }
+
+@media screen and (min-width:1280px) {
+   font-size: 64px;
+   margin-right: 26px;
+}}
 
 .one-room-for-two-title {
    font-family: 'Times New Roman';
@@ -41,8 +79,18 @@ margin-right: 257px;
    line-height: 1.17;
    letter-spacing: 0.05em;
    color: var(--color-text-primary);
-margin-top: 32px;
-margin-right: 100px;
+   margin-top: 32px;
+   margin-right: 100px;
+@media screen and (min-width:1024px) {
+font-size: 30px;
+line-height: 1.13;
+margin-right: 26px;}
+ 
+@media screen and (min-width:1280px) {
+   font-size: 36px;
+   line-height: 1.14;
+   margin-right: 26px;
+   }
 }
 
 .one-room-for-two-description {
@@ -54,6 +102,18 @@ margin-right: 100px;
    color: var(--color-text-dark-secondary);
 margin-top: 12px;
 margin-right: 126px;
+ 
+@media screen and (min-width:1024px) {
+   font-size: 16px;
+   margin-right: 26px;
+width: 439px;
+height: 80px;
+   }
+ 
+   @media screen and (min-width:1280px) {
+   font-size: 16px;
+   margin-right: 26px;
+   }
 }
 
 .foto-room-for-two {
@@ -67,12 +127,30 @@ margin-bottom: 32px;
  margin-bottom: 32px;
  width: 246px;
  height: 322px;
-}
+
+ @media screen and (min-width:1024px) {
+   width: 400px;
+   height: 524px;
+   margin-left: 0;
+   margin-right: 97px;
+   margin-bottom: 0;
+   }
+ 
+   @media screen and (min-width:1280px) {
+   width: 460px;
+   height: 574px;
+   margin-left: 0;
+   }}
+
 
 .two-arrow {
 display: flex;
 gap: 34px;
 width: 100px;
+
+@media screen and (min-width:1024px) {
+   display: none;
+   }
 }
 
 .one-time-no {
@@ -81,9 +159,21 @@ gap: 16px;
 margin-right: 130px;
 margin-left: -120px;
 margin-bottom: 28px;
+
+@media screen and (min-width:1024px) {
+   gap: 40px;
+   margin-right: 266px;
+   margin-left: 47px;
+   margin-bottom: 28px;
+   }
+ 
+   @media screen and (min-width:1280px) {
+      gap: 40px;
+      margin-right: 130px;
+      margin-left: 47px;
+      margin-bottom: 28px;
+   }
 }
-
-
  
 .btn-dark {
    width: 236px;
@@ -125,6 +215,36 @@ margin-bottom: 28px;
        color: var(--color-text-primary);
    }
 }
+
+.room-for-two-top {
+   
+   @media screen and (min-width:414px) {
+      display: block;
+      } 
+    
+      @media screen and (min-width:1024px) {
+      display: flex;
+      }
+    
+      @media screen and (min-width:1280px) {
+     display: flex;
+      }}
+
+      .room-for-two-down {
+   
+         @media screen and (min-width:414px) {
+            display: block;
+            } 
+          
+            @media screen and (min-width:1024px) {
+            display: flex;
+            }
+          
+            @media screen and (min-width:1280px) {
+           display: flex;
+            }}
+      
+
 
    
 
