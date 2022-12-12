@@ -64,21 +64,30 @@
 
 .row-hotel {
   display: flex;
-  // flex-wrap: nowrap;
   gap: 48px;
-  align-items: baseline;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-bottom: 16px;
+}
+
+.area-hotel {
+  width: 260px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+
+  display: flex;
+  //   gap: 12px;
+  align-items: center;
 }
 
 .number-hotel-list {
   display: flex;
-  gap: 12px;
+  //   gap: 12px;
+  align-items: center;
   width: 260px;
   height: 40px;
-  padding: 12px 8px 11px 40px;
-
   background-color: #ffffff;
   border: 0.5px solid #f3c653;
   border-radius: 2px;
@@ -93,6 +102,15 @@
   color: #494848;
 }
 
+.number-hotel2 {
+  margin-left: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--color-text-logo);
+  color: #494848;
+}
 .adress {
   width: 260px;
   height: 70px;
