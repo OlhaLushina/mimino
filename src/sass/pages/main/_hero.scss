@@ -7,28 +7,29 @@
   padding-bottom: 21px;
 
   outline: 1px solid black;
-  background-image: url(..//..//../images/mobile/homepage/main-hero-mob.jpg);
+  background-image: var(--gradient), url(..//..//../images/mobile/homepage/main-hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @include retina {
-    background-image: url(..//..//../images/mobile/homepage/main-hero-2x-mob.jpg);
+    background-image: var(--gradient), url(..//..//../images/mobile/homepage/main-hero-2x-mob.jpg);
   }
 
   @include tablet {
-    background-image: url(..//..//../images/tablet/homepage/main-hero-tab.jpg);
+    background-image: var(--gradient), url(..//..//../images/tablet/homepage/main-hero-tab.jpg);
     max-width: 1024px;
+    height: 720px;
     @include retina {
-      background-image: url(..//..//../images/tablet/homepage/main-hero-2x-tab.jpg);
+      background-image: var(--gradient), url(..//..//../images/tablet/homepage/main-hero-2x-tab.jpg);
     }
   }
 
   @include desktop {
-    background-image: url(..//..//../images/desktop/homepage/main-hero.jpg);
+    background-image: var(--gradient), url(..//..//../images/desktop/homepage/main-hero.jpg);
     max-width: 1280px;
     @include retina {
-      background-image: url(..//..//../images/desktop/homepage/main-hero-2x.jpg);
+      background-image: var(--gradient), url(..//..//../images/desktop/homepage/main-hero-2x.jpg);
     }
   }
 }
@@ -71,6 +72,8 @@
   letter-spacing: 0.02em;
   color: var(--color-text-light);
 
+  text-transform: uppercase;
+
   margin-bottom: 40px;
 
   @include tablet {
@@ -99,11 +102,15 @@
   display: flex;
   gap: 23px;
   margin-left: 15px;
+  position: absolute;
+  bottom: 2%;
 
   @include tablet {
     margin-left: 48px;
 }
 @include desktop {
 position: absolute;
+top: 5%;
+right: 5%;
 }
 }
