@@ -1,0 +1,100 @@
+.logo {
+  color: red;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.section-contact {
+  background-color: var(--primary-bg-color);
+}
+
+.contact-sub-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-dark-secondary);
+  margin-bottom: 16px;
+}
+
+.contact-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-text-brown);
+}
+
+.row-restoran {
+  display: flex;
+  gap: 22px;
+  align-items: baseline;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.number-restoran {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--color-text-logo);
+  background-color: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+
+  width: 144px;
+  height: 40px;
+  padding: 12px 8px 11px 40px;
+}
+
+.row-hotel {
+  display: flex;
+  // flex-wrap: nowrap;
+  gap: 48px;
+  align-items: baseline;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.number-hotel-list {
+  display: flex;
+  gap: 12px;
+  width: 260px;
+  height: 40px;
+  padding: 12px 8px 11px 40px;
+
+  background-color: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+}
+
+.number-hotel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--color-text-logo);
+  color: #494848;
+}
+
+.adress {
+  width: 260px;
+  height: 70px;
+  background-color: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  margin-left: 113px;
+
+  //   font-family: 'Montserrat';
+  // font-style: normal;
+  // font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #494848;
+
+  padding: 8px 33px 7px 34px;
+}
