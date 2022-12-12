@@ -1,0 +1,183 @@
+.menu {
+    @media screen and (min-width: 1280px) {
+        padding-top: 58px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: 414px) and (max-width: 1024px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    @media screen and (max-width: 414px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+.menu__block {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    @media screen and (min-width: 1280px) {
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 140px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 90px;
+    }
+    @media screen and (min-width: 414px) and (max-width: 1024px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+    @media screen and (max-width: 414px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+}
+.menu__table {
+    height: auto;
+    @media screen and (min-width: 1280px) {
+        width: 460px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        width: 444px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 490px) and (max-width: 1024px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 490px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.menu__title {
+    margin: 0 auto;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+    @media screen and (min-width: 1280px) {
+        width: 1060px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1110px) and (max-width: 1280px) {
+        width: 1060px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1110px) {
+        width: 1008px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 414px) and (max-width: 1024px) {
+        width: 490px;
+        margin-bottom: 12px;
+    }
+    @media screen and (max-width: 414px) {
+        margin-bottom: 12px;
+    }
+}
+.menu__subtitle {
+    padding-top: 20px;
+    padding-bottom: 12px;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--color-text-primary);
+}
+.menu__name {
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--color-text-primary);
+}
+.menu__description {
+    width: 260px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-text-primary);
+}
+.menu__volume {
+    width: 85px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color-text-primary);
+}
+.menu__price {
+    width: 85px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color-text-primary);
+}
+.menu__block-btn {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    @media screen and (min-width: 1280px) {
+        //width: 1250px;
+        width: 1070px;
+    }
+    @media screen and (min-width: 1110px) and (max-width: 1280px) {
+        width: 994px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1110px) {
+        width: 994px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 414px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 414px) and (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+    }
+    @media screen and (max-width: 414px) {
+        width: 100%;
+        justify-content: center;
+    }
+}
+.menu__btn {
+    width: 236px;
+    height: 49px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    border: 2px solid var(--primary-bg-color);
+    border-radius: 25px;
+    background-color: var(--color-text-primary);
+    color: var(--color-text-accent);
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        margin-top: 35px;
+    }
+    @media screen and (max-width: 768px) {
+        margin-top: 35px;
+    }
+}
