@@ -1,45 +1,77 @@
+.container {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.one-room-for-two {
+   background: #FFFDEE;
+}
 
 .one-room-for-two-info {
    display: block;
 }
 
 .one-room-for-two-text {
-font-family: 'Times New Roman';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 37px;
-color: #B4B4B4;
+   font-family: 'Times New Roman';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #B4B4B4;
+   margin-top: 32px;
+margin-right: 194px;
 }
+   
 
 .one-room-for-two-subtitle {
-font-family: 'Film P3';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 69px;
-letter-spacing: 0.3em;
-color: #494848;
+   font-family: 'Film P3';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 43px;
+   letter-spacing: 0.3em;
+   color: #494848;
+   margin-top: 8px;
+margin-right: 257px;
 }
 
+
 .one-room-for-two-title {
-font-family: 'Times New Roman';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 41px;
-letter-spacing: 0.05em;
-color: #000000;
+   font-family: 'Times New Roman';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: 0.05em;
+   color: #000000;
+margin-top: 32px;
+margin-right: 100px;
+width: 271px;
 }
+
 .one-room-for-two-description {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0.02em;
-color: #7A7A7A;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 15px;
+   letter-spacing: 0.02em;
+   color: #5F5F5F;
+margin-top: 12px;
+margin-right: 126px;
 }
-   
-   
-  
+
+.foto-room-for-two {
+margin-left: 140px;
+margin-top: 32px;
+margin-bottom: 32px;
+}
+
+.foto-room {
+ margin-left: 140px;
+ margin-bottom: 32px;
+}
+
+.two-arrow {
+display: flex;
+}
