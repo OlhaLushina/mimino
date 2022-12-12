@@ -13,7 +13,8 @@
 }
 
 .logo-contact {
-  font-family: 'Film P3';
+  display: block;
+  font-family: var(--logo-fonts);
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -25,9 +26,13 @@
   @include tablet {
     margin-bottom: 8px;
   }
+  @include desktop {
+    margin-bottom: 16px;
+  }
 }
 
 .contact-sub-text {
+  font-family: var(--primary-fonts);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -45,6 +50,7 @@
 }
 
 .contact-item {
+  font-family: var(--primary-fonts);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -166,6 +172,9 @@
   @include tablet {
     margin-left: 0px;
     margin-bottom: 32px;
+    width: 285px;
+    height: 56px;
+    padding: 9px 10px 7px 10px;
   }
 }
 
@@ -181,7 +190,7 @@
 
 .right-colum {
   @include tablet {
-    width: 552px;
+    width: 535px;
     height: 412px;
     background-color: red;
   }
