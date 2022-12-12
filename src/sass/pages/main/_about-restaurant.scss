@@ -53,7 +53,7 @@ color: var(--color-text-logo);
   }
 }
 
-.about-item {
+.about-content {
   margin-bottom: 32px;
 
   @media screen and (min-width:1024px) {
@@ -102,7 +102,7 @@ margin-left: auto;
 
 @media screen and (min-width:1024px) {
   position: absolute;
-  bottom: -82px;
+  top: 100%;
   right: 112px;
   z-index: 11;
   }
@@ -111,6 +111,10 @@ margin-left: auto;
 .restaurant {
 box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 border-radius: 2px;
+
+@media screen and (min-width:1024px) {
+  margin-left: 32px;
+  }
 }
 
 .slider {
@@ -120,4 +124,12 @@ margin-left: 69px;
   margin-left: 536px;
   margin-right: 294px;
   }
+}
+
+.your-class {
+  display: flex;
+  width: 428px;
+  height: 194px;
+  margin-left: auto;
+  margin-right: 45px;
 }
