@@ -112,3 +112,23 @@ top: 5%;
 right: 5%;
 }
 }
+
+@include tablet {
+  .header_adress {
+      display: flex;
+      align-items: center;
+      padding: 8px 6px;
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
+      font-family: var(--primary-fonts);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: calc(15 / 12);
+      letter-spacing: 0.01em;
+      color: var(--color-text-address);
+    }
+  
+    .header-icon-check {
+      margin-right: 8px;
+    }
+}
