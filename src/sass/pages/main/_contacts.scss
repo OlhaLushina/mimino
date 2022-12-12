@@ -28,7 +28,6 @@
 .row-restoran {
   display: flex;
   gap: 22px;
-  //   align-items: baseline;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 16px;
@@ -111,21 +110,28 @@
   color: var(--color-text-logo);
   color: #494848;
 }
+
 .adress {
   width: 260px;
-  height: 70px;
+  height: 76px;
   background-color: #ffffff;
   border: 0.5px solid #f3c653;
   border-radius: 2px;
-  margin-left: 113px;
-
-  //   font-family: 'Montserrat';
-  // font-style: normal;
-  // font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.01em;
   color: #494848;
 
-  padding: 8px 33px 7px 34px;
+  margin-left: 113px;
+  padding: 8px 33px 7px 10px;
+}
+
+.adress-wrap {
+  display: flex;
+  align-items: center;
+  //   gap: 16px;
+}
+
+.location-icon {
+  margin-right: 10px;
 }
