@@ -1,0 +1,96 @@
+.section {
+  padding: 32px 0;
+}
+.outline {
+  outline: 2px solid tomato;
+}
+.triple-room {
+  background-color: var(--seconadary-bg-color);
+}
+.pre-title {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--color-text-gray);
+}
+.right-pretitle {
+  text-align: right;
+  margin-bottom: 8px;
+}
+.title-logo {
+  text-align: right;
+  margin-bottom: 32px;
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: var(--color-text-logo);
+}
+.room-title {
+  text-align: right;
+  //margin-bottom: 12px;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--color-text-primary);
+}
+.room-description {
+  // width: 242px;
+  // height: 76px;
+  font-family: var(--primary-fonts);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-dark-secondary);
+  margin: 12px 74px 32px 98px;
+}
+.appartment-image {
+  outline: 2px solid tomato;
+  margin-bottom: 32px;
+  width: 244px;
+}
+//slick
+.one-time {
+  // width: 274px;
+  margin-bottom: 72px;
+  margin-left: auto;
+  outline: 2px solid tomato;
+}
+
+.slick-prev:before {
+  content: '';
+}
+.slick-next:before {
+  content: '';
+}
+
+.slick-next {
+  width: 32px;
+  height: 32px;
+  transform: translate(-150px, 150px);
+  background-image: url(../slick/images/cil_arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slick-prev {
+  width: 32px;
+  height: 32px;
+  transform: translate(300px, 100px);
+  background-image: url(../slick/images/cil_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//button set
+.button-item:first-child {
+  margin-bottom: 16px;
+}
+.button {
+  display: block;
+  margin: 0 auto;
+}
