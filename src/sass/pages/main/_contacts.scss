@@ -194,13 +194,13 @@
   margin-right: 10px;
 }
 
-.right-colum {
-  @include tablet {
-    width: 535px;
-    height: 412px;
-    background-color: red;
-  }
-}
+// .right-colum {
+//   @include tablet {
+//     width: 535px;
+//     height: 412px;
+//     background-color: red;
+//   }
+// }
 
 .map-mob {
   @include tablet {
@@ -208,14 +208,14 @@
   }
 }
 
-// .map-tab {
-//   @media screen and (max-width: 1023px) {
-//     display: none;
-//   }
-// }
+.map-tab {
+  @media screen and (max-width: 1023px), (min-width: 1279px) {
+    display: none;
+  }
+}
 
-// .map-desctop {
-//   @media screen and (max-width: 1279px) {
-//     display: none;
-//   }
-// }
+.map-desctop {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
