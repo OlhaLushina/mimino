@@ -1,6 +1,6 @@
-.section {
-  padding: 32px 0;
-}
+/*.section {
+  //padding: 32px 0;
+}*/
 .container {
   @include tablet {
     position: relative;
@@ -19,11 +19,12 @@
   line-height: 1.15;
   color: var(--color-text-gray);
   margin-bottom: 8px;
+  padding-top: 32px;
   @include tablet {
     font-size: 32px;
     margin-bottom: 4px;
     margin-right: 17px;
-    padding-top: 64px;
+    padding-top: 66px;
   }
   @include desktop {
     padding-top: 72px;
@@ -76,13 +77,13 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--color-text-dark-secondary);
-  margin: 12px 62px 32px 98px;
+  margin: 12px 62px 32px 83px;
   @include tablet {
     font-weight: 700;
     font-size: 16px;
     margin-right: 20px;
     width: 400px;
-    margin: 16px 20px 169px 510px;
+    margin: 16px 20px 169px 557px;
   }
   @include desktop {
     margin: 24px 110px 188px 600px;
@@ -91,7 +92,7 @@
 .appartment-image {
   outline: 2px solid tomato;
   margin-bottom: 32px;
-  width: 246px;
+  width: 244px;
   background: var(--color-text-lightgray);
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
