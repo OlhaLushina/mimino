@@ -1,145 +1,244 @@
-.luxe-room-container {
-  position: relative;
+.container-triple-room {
+  @include tablet {
+    position: relative;
+  }
 }
-.room-luxe-for-two {
-  background-color: var (--primary-bg-color);
+
+.triple-room {
   padding-top: 32px;
   padding-bottom: 32px;
+  background-color: var(--seconadary-bg-color);
+
   @include tablet {
-    padding-top: 62px;
-    padding-bottom: 47px;
+    padding-top: 66px;
+    padding-bottom: 40px;
   }
+
   @include desktop {
     padding-top: 72px;
-    padding-bottom: 47px;
   }
 }
-.brand-pretitle {
-  margin-bottom: 8px;
+
+.triple-room .additional-title {
   font-family: var(--secondary-fonts);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
   color: var(--color-text-gray);
+  margin-bottom: 8px;
+
   @include tablet {
-    margin-bottom: 4px;
     font-size: 32px;
-    line-height: 1.16;
+    margin-bottom: 4px;
   }
 }
-.brand-title {
+
+.triple-room .right-addtitle {
+  text-align: right;
+}
+
+.triple-room .title-logo {
+  text-align: right;
   margin-bottom: 32px;
+  margin-right: -0.28em;
   font-family: var(--logo-fonts);
   font-weight: 700;
   font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: var(--color-text-logo);
+
   @include tablet {
-    margin-bottom: 62px;
     font-size: 64px;
+    margin-bottom: 62px;
   }
+
   @include desktop {
     margin-bottom: 72px;
   }
 }
-.hotel-section-title {
-  margin-bottom: 12px;
+
+.triple-room .room-title {
+  text-align: right;
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--color-text-primary);
+
   @include tablet {
-    margin-bottom: 16px;
     font-size: 30px;
     line-height: 1.13;
+    margin-right: 45px;
   }
+
   @include desktop {
-    margin-bottom: 24px;
     font-size: 36px;
+    margin-right: 57px;
   }
 }
 
-.room-description {
-  margin: 12px 141px 32px 0px;
+.triple-room .room-description {
   font-family: var(--primary-fonts);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--color-text-dark-secondary);
-  @media screen and (max-width: 414px) {
-    margin: 12px 60px 32px 0px;
-  }
+  margin: 12px 62px 32px 83px;
+
   @include tablet {
-    margin-bottom: 176px;
-    margin-right: 491px;
+    font-weight: 700;
     font-size: 16px;
+    //margin-right: 20px;
+    width: 400px;
+    margin: 16px 20px 169px 510px;
   }
+
   @include desktop {
-    margin-bottom: 188px;
-    margin-right: 710px;
-    font-size: 16px;
+    margin: 24px 110px 188px 600px;
   }
 }
 
-.appartment-image {
+.triple-room .appartment-image {
+  //outline: 2px solid tomato;
   margin-bottom: 32px;
   width: 244px;
   background: var(--color-text-lightgray);
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
   @include tablet {
     position: absolute;
-    top: -94px;
-    right: 112px;
+    top: -32px;
+    left: 112px;
     width: 400px;
   }
+
   @include desktop {
     position: absolute;
-    top: -94px;
-    right: 180px;
+    top: -32px;
+    left: 180px;
     width: 460px;
   }
 }
-//   .slider {
-//     margin-right: 130px;
-//     width: 100%;
-//     height: 254px;
-//   }
-.slider-wrap {
-  @include tablet {
-    display: flex;
-    align-items: center;
-  }
-}
-.slider {
-  margin-right: auto;
+
+// .slider-wrap {
+//   display: flex;
+//   margin-top: 176px;
+// }
+.one-time {
+  margin-left: auto;
   margin-bottom: 30px;
   width: 284px;
   height: 240px;
   background-color: tomato;
+
   @include tablet {
     width: 428px;
     height: 250px;
     margin-left: 0;
   }
 }
+
+.slider-wrap {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+//button set
+.button-set {
+  @include tablet {
+    margin-top: 39px;
+  }
+}
+
 .button-item:first-child {
   margin-bottom: 16px;
 }
-.btn-link {
+
+.btn-detail {
   display: block;
   margin: 0 auto;
   padding: 14px 65px;
 }
-.btn {
+
+.btn-price {
   margin: 0 auto;
   display: block;
 }
-//   .test {
-//     width: 100%;
-//     height: 300px;
-//   }
+
+//slick
+
+/*.one-time {
+  width: 274px;
+  margin-bottom: 72px;
+  margin-left: auto;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  //outline: 2px solid tomato;
+}*/
+.slick-track {
+  display: flex;
+  gap: 20px;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  background-color: var(--seconadary-bg-color);
+}
+
+/*.slick-item {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  width: 194px;
+}
+
+.slick-prev:before {
+  content: '';
+  background-image: url(../slick/images/cil_arrow-left.svg);
+}
+.slick-next:before {
+  content: '';
+}
+
+.slick-next {
+  width: 32px;
+  height: 32px;
+  transform: translate(-150px, 100px);
+  background-image: url(../slick/images/cil_arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slick-prev {
+  width: 32px;
+  height: 32px;
+  transform: translate(300px, 100px);
+  background-image: url(../slick/images/cil_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+.slick-next:before {
+  content: '';
+  //background-image: url(.../slick/images/cil_arrow-right.svg);
+}
+
+.slick-next:before,
+.slick-arrow::before {
+  content: '';
+  //background-image: url(.../slick/images/cil_arrow-right.svg);
+}
+
+.slick-prev {
+  width: 32px;
+  height: 32px;
+  background-image: url(../images/slick/cil_arrow-left.svg);
+}
+
+.slick-next {
+  width: 32px;
+  height: 32px;
+}
