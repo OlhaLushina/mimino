@@ -1,5 +1,5 @@
 .main-hero {
-  max-width: 414px;
+  max-width: 100%;
   height: 740px;
 
   text-align: center;
@@ -21,7 +21,6 @@
   @include tablet {
     background-image: var(--gradient),
       url(..//..//../images/tablet/homepage/main-hero-tab.jpg);
-    max-width: 1024px;
     height: 720px;
     @include retina {
       background-image: var(--gradient),
@@ -32,7 +31,6 @@
   @include desktop {
     background-image: var(--gradient),
       url(..//..//../images/desktop/homepage/main-hero.jpg);
-    max-width: 1280px;
 
     @include retina {
       background-image: var(--gradient),
@@ -65,8 +63,6 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
   color: var(--color-text-light);
-
-  text-transform: uppercase;
 
   margin-bottom: 40px;
 

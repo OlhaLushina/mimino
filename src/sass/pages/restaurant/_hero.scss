@@ -1,5 +1,5 @@
 .rest-hero {
-  max-width: 414px;
+  max-width: 100%;
   height: 740px;
 
   text-align: center;
@@ -18,7 +18,6 @@
 
   @include tablet {
     background-image: var(--gradient), url(..//..//../images/tablet/restaurant/restaurant-hero-tab.jpg);
-    max-width: 1024px;
     height: 720px;
 
     @include retina {
@@ -28,7 +27,6 @@
 
   @include desktop {
     background-image: var(--gradient), url(..//..//../images/desktop/restaurant/restaurant-hero.jpg);
-    max-width: 1280px;
 
     @include retina {
       background-image: var(--gradient), url(..//..//../images/desktop/restaurant/restaurant-hero-2x.jpg);
@@ -60,8 +58,6 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
   color: var(--color-text-light);
-
-  text-transform: uppercase;
 
   margin-bottom: 40px;
 
