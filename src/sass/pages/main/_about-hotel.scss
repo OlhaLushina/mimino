@@ -1,4 +1,4 @@
-.about-hotel {
+.coi_about-hotel {
   background: var(--primary-bg-color);
 
   @media screen and (min-width: 414px) {
@@ -33,10 +33,10 @@
   }
 }
 
-.container-geometry {
+.coi_container-geometry {
   position: relative;
 }
-.visually-hidden {
+.coi_visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -46,13 +46,22 @@
 
   display: none;
 }
-// .card-list {
-//   display: flex;
-// }
-// .card-text {
-//   display: flex;
-// }
-.card-text__title {
+.coi_card-list {
+  @media screen and (min-width: 414px) {
+  }
+
+  @media screen and (min-width: 1024px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.coi_card-text {
+  display: flex;
+}
+.coi_card-text__title {
   font-family: 'Times New Roman';
   //   font-style: normal;
   //   font-weight: 400;
@@ -60,7 +69,7 @@
   line-height: calc(23 / 20);
   color: var(--color-text-gray);
 }
-.card-text__mimino {
+.coi_card-text__mimino {
   font-family: 'Film P3';
   // font-style: normal;
   font-weight: 700;
@@ -69,7 +78,7 @@
   letter-spacing: 0.3em;
   color: var(--color-text-logo);
 }
-.card-text__text {
+.coi_card-text__text {
   font-family: 'Montserrat';
   // font-style: normal;
   font-weight: 600;
@@ -78,16 +87,17 @@
   letter-spacing: 0.02em;
   color: var(--color-text-dark-secondary);
 }
-.card-list__img {
-  width: 244px;
-  height: 322px;
-  // width: 100%;
+.coi_card-list__img {
+  // width: 244px;
+  // height: 322px;
+  width: 100%;
   left: 0px;
   top: 0px;
   background-image: url(/src/images/mobile/homepage/modern-apartment-with-bedroom-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: cover;
+  background-size: cover;
+  // background-size: contain;
   background: var(--color-text-lightgray);
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 
@@ -120,12 +130,31 @@
   }
 }
 
-.card-list-hotel {
-  display: flex;
+.coi_card-list-hotel {
+  @media screen and (min-width: 414px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+  }
 }
-.card-list-hotel__text {
+.coi_card-list-hotel__text {
+  display: block;
+
   // width: 311px;
   // height: 122px;
+  padding-top: 123px;
+  padding-right: 45px;
+  padding-bottom: 116px;
+  padding-left: 379px;
   // left: 379px;
   // top: 673px;
   font-family: 'Montserrat';
@@ -136,11 +165,11 @@
   letter-spacing: 0.02em;
   color: var(--color-text-brown);
 }
-.card-list-hotel__img {
+.coi_card-list-hotel__img {
   width: 200px;
   height: 278px;
   // left: -60px;
-  top: 0px;
+  // top: 0px;
 
   background-image: url(/src/images/mobile/homepage/hotel-hall-mob.jpg);
   background-repeat: no-repeat;
@@ -178,6 +207,8 @@
   }
 }
 
-.slider {
+.coi_slider {
   display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
 }

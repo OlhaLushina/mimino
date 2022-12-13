@@ -1,36 +1,36 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
   --color-text-primary: #000000;
-  --color-text-dark-secondary: #5f5f5f;
-  --color-text-gray: #b4b4b4;
-  --color-text-brown: #c79002;
-  --color-text-light: #ffffff;
-  --color-text-accent: #f3c653;
-  --color-text-address: #e5e5e5;
+  --color-text-dark-secondary: #5F5F5F;
+  --color-text-gray: #B4B4B4;
+  --color-text-brown: #C79002;
+  --color-text-light: #FFFFFF;
+  --color-text-accent: #F3C653;
+  --color-text-address: #E5E5E5;
   --color-text-logo: #494848;
-  --footer-bg-color: #0e0c07;
-  --primary-bg-color: #fffdee;
-  --seconadary-bg-color: #f0ecd6;
-  --color-text-lightgray: #dadada;
-  --color-text-lightbrown: #7a7a7a;
+  --footer-bg-color: #0E0C07;
+  --primary-bg-color: #FFFDEE;
+  --seconadary-bg-color: #F0ECD6;
+  --color-text-lightgray: #DADADA;
+  --color-text-lightbrown: #7A7A7A;
   --color-text-middlegray: #bababa;
   --color-text-middlebrown: #808080;
-  --logo-fonts: 'Logofont', sans-serif;
-  --primary-fonts: 'Montserrat', sans-serif;
-  --secondary-fonts: 'Timesstand', sans-serif;
-  --secondary-bold-fonts: 'Timesbold', sans-serif;
+  --logo-fonts: "Logofont", sans-serif;
+  --primary-fonts: "Montserrat", sans-serif;
+  --secondary-fonts: "Timesstand", sans-serif;
+  --secondary-bold-fonts: "Timesbold", sans-serif;
 }
 
 @font-face {
-  font-family: 'Logofont';
+  font-family: "Logofont";
   src: url(../fonts/FilmP3Bold.ttf);
 }
 @font-face {
-  font-family: 'Timesstand';
+  font-family: "Timesstand";
   src: url(../fonts/TimesNewRomanMTStd.ttf);
 }
 @font-face {
-  font-family: 'Timesbold';
+  font-family: "Timesbold";
   src: url(../fonts/TimesNewRomanMTStd-Bold.ttf);
 }
 body {
@@ -104,50 +104,159 @@ img {
   }
 }
 
-.about-hotel {
+.btn-light {
+  width: 236px;
+  height: 48px;
+  border: 2px solid var(--color-text-light);
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: var(--primary-fonts);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-accent);
+}
+.btn-light:hover, .btn-light:focus {
+  background-color: var(--color-text-light);
+}
+@media screen and (min-width: 1024px) {
+  .btn-light {
+    height: 49px;
+  }
+}
+
+.btn-dark {
+  width: 236px;
+  height: 48px;
+  border: 2px solid var(--color-text-light);
+  border-radius: 25px;
+  background-color: var(--color-text-primary);
+  font-family: var(--primary-fonts);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-accent);
+}
+.btn-dark:hover, .btn-dark:focus {
+  background-color: var(--color-text-light);
+}
+@media screen and (min-width: 1024px) {
+  .btn-dark {
+    height: 49px;
+  }
+}
+
+.reserv-btn {
+  width: 100%;
+  height: 64px;
+  border: 1px solid var(--color-text-accent);
+  border-radius: 25px;
+  background-color: var(--color-text-primary);
+  font-family: var(--primary-fonts);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-text-light);
+}
+.reserv-btn:hover, .reserv-btn:focus {
+  background-color: var(--color-text-accent);
+  color: var(--color-text-primary);
+}
+@media screen and (min-width: 1024px) {
+  .reserv-btn {
+    width: 434px;
+    font-size: 24px;
+    line-height: 1.2083333333;
+  }
+}
+
+.modal-reserv-btn {
+  width: 100%;
+  height: 64px;
+  border: 1px solid var(--color-text-accent);
+  background-color: var(--color-text-primary);
+  font-family: var(--primary-fonts);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-text-light);
+}
+.modal-reserv-btn:hover, .modal-reserv-btn:focus {
+  background-color: var(--color-text-accent);
+  color: var(--color-text-primary);
+}
+@media screen and (min-width: 1024px) {
+  .modal-reserv-btn {
+    font-size: 24px;
+    line-height: 1.2083333333;
+  }
+}
+
+.coi_about-hotel {
   background: var(--primary-bg-color);
 }
 @media screen and (min-width: 414px) {
-  .about-hotel {
-    left: 0px;
+  .coi_about-hotel {
+    padding-top: 18px;
+    padding-bottom: 72px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .about-hotel {
+  .coi_about-hotel {
+    padding-top: 120px;
+    padding-bottom: 96px;
     left: 0px;
     top: 2578px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .about-hotel {
+  .coi_about-hotel {
+    padding-top: 120px;
+    padding-bottom: 119px;
     left: 0px;
     top: 2615px;
     border: 1px solid #000000;
   }
 }
 
-.container-geometry {
+.coi_container-geometry {
   position: relative;
 }
 
-.visually-hidden {
+.coi_visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  display: none;
 }
 
-.card-text__title {
-  font-family: 'Times New Roman';
+@media screen and (min-width: 1280px) {
+  .coi_card-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.coi_card-text {
+  display: flex;
+}
+
+.coi_card-text__title {
+  font-family: "Times New Roman";
   font-size: 20px;
   line-height: 1.15;
   color: var(--color-text-gray);
 }
 
-.card-text__mimino {
-  font-family: 'Film P3';
+.coi_card-text__mimino {
+  font-family: "Film P3";
   font-weight: 700;
   font-size: 40px;
   line-height: 1.075;
@@ -155,8 +264,8 @@ img {
   color: var(--color-text-logo);
 }
 
-.card-text__text {
-  font-family: 'Montserrat';
+.coi_card-text__text {
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -164,9 +273,8 @@ img {
   color: var(--color-text-dark-secondary);
 }
 
-.card-list__img {
+.coi_card-list__img {
   width: 100%;
-  height: auto;
   left: 0px;
   top: 0px;
   background-image: url(/src/images/mobile/homepage/modern-apartment-with-bedroom-mob.jpg);
@@ -176,47 +284,63 @@ img {
   background: var(--color-text-lightgray);
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 }
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .card-list__img {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .coi_card-list__img {
     background-image: url(/src/images/mobile/homepage/modern-apartment-with-bedroom-2x-mob.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
-  .card-list__img {
+  .coi_card-list__img {
+    width: 400px;
+    height: 524px;
     background-image: url(/src/images/tablet/homepage/modern-apartment-with-bedroom-tab.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (min-resolution: 192dpi),
-  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
-  .card-list__img {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .coi_card-list__img {
     background-image: url(/src/images/tablet/homepage/modern-apartment-with-bedroom-2x-tab.jpg);
+    width: 400px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .card-list__img {
+  .coi_card-list__img {
+    width: 460px;
+    height: 574px;
     background-image: url(/src/images/desktop/homepage/modern-apartment-with-bedroom.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .card-list__img {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .coi_card-list__img {
     background-image: url(/src/images/desktop/homepage/modern-apartment-with-bedroom-2x.jpg);
   }
 }
 
-.card-list-hotel {
-  display: flex;
+@media screen and (min-width: 414px) {
+  .coi_card-list-hotel {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .coi_card-list-hotel {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .coi_card-list-hotel {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.card-list-hotel__text {
-  font-family: 'Montserrat';
+.coi_card-list-hotel__text {
+  display: block;
+  padding-top: 123px;
+  padding-right: 45px;
+  padding-bottom: 116px;
+  padding-left: 379px;
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -224,11 +348,9 @@ img {
   color: var(--color-text-brown);
 }
 
-.card-list-hotel__img {
-  left: -60px;
-  top: 0px;
-  width: 100%;
-  height: auto;
+.coi_card-list-hotel__img {
+  width: 200px;
+  height: 278px;
   background-image: url(/src/images/mobile/homepage/hotel-hall-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -237,41 +359,141 @@ img {
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .card-list-hotel__img {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .coi_card-list-hotel__img {
     background-image: url(/src/images/mobile/homepage/hotel-hall-2x-mob.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
-  .card-list-hotel__img {
+  .coi_card-list-hotel__img {
+    width: 350px;
+    height: 500px;
     background-image: url(/src/images/tablet/homepage/hotel-hall-tab.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (min-resolution: 192dpi),
-  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
-  .card-list-hotel__img {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .coi_card-list-hotel__img {
     background-image: url(/src/images/tablet/homepage/hotel-hall-2x-tab.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
-  .card-list-hotel__img {
+  .coi_card-list-hotel__img {
+    width: 460px;
+    height: 574px;
     background-image: url(/src/images/desktop/homepage/hotel-hall.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .card-list-hotel__img {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .coi_card-list-hotel__img {
     background-image: url(/src/images/desktop/homepage/hotel-hall-2x.jpg);
   }
 }
 
-.slider {
+.coi_slider {
   display: flex;
-} /*# sourceMappingURL=index.css.map */
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.section {
+  padding: 32px 0;
+}
+
+.outline {
+  outline: 2px solid tomato;
+}
+
+.triple-room {
+  background-color: var(--seconadary-bg-color);
+}
+
+.pre-title {
+  font-family: "Times New Roman";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--color-text-gray);
+}
+
+.right-pretitle {
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.title-logo {
+  text-align: right;
+  margin-bottom: 32px;
+  font-family: "Film P3";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: var(--color-text-logo);
+}
+
+.room-title {
+  text-align: right;
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--color-text-primary);
+}
+
+.room-description {
+  font-family: var(--primary-fonts);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-dark-secondary);
+  margin: 12px 74px 32px 98px;
+}
+
+.appartment-image {
+  outline: 2px solid tomato;
+  margin-bottom: 32px;
+  width: 244px;
+}
+
+.one-time {
+  margin-bottom: 72px;
+  margin-left: auto;
+  outline: 2px solid tomato;
+}
+
+.slick-prev:before {
+  content: "";
+}
+
+.slick-next:before {
+  content: "";
+}
+
+.slick-next {
+  width: 32px;
+  height: 32px;
+  transform: translate(-150px, 150px);
+  background-image: url(../slick/images/cil_arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-prev {
+  width: 32px;
+  height: 32px;
+  transform: translate(300px, 100px);
+  background-image: url(../slick/images/cil_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button-item:first-child {
+  margin-bottom: 16px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */
