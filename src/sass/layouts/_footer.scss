@@ -71,8 +71,7 @@
   @include tablet {
     flex-direction: column;
     gap: 12px;
-    @include tablet {
-      &::after {
+    &::after {
         content: '';
         min-width: 475px;
         height: 1px;
@@ -82,7 +81,6 @@
         filter: blur(0.5px);
         transform: rotate(90deg);
       }
-    }
   }
 }
 .soc-text {
@@ -102,7 +100,7 @@
     width: 143px;
     border: 0.5px solid var(--color-text-accent);
     border-radius: 2px;
-    padding: 10px 12px;
+    padding: 7px 12px;
     display: flex;
     align-items: center;
     justify-content: space-around;
