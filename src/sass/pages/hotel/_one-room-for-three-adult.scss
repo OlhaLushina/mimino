@@ -44,9 +44,9 @@
   text-align: right;
 }
 .title-logo {
-  text-align: right;
+  margin-left: auto;
+  max-width: 127px;
   margin-bottom: 32px;
-  //margin-left: 258px;
   font-family: var(--logo-fonts);
   font-weight: 700;
   font-size: 40px;
@@ -54,11 +54,13 @@
   letter-spacing: 0.3em;
   color: var(--color-text-logo);
   @include tablet {
+    margin-right: 17px;
+    max-width: 202px;
     font-size: 64px;
     margin-bottom: 62px;
   }
   @include desktop {
-    margin-right: 40px;
+    margin-right: 57px;
     margin-bottom: 72px;
   }
 }
