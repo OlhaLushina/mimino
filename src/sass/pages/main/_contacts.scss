@@ -60,7 +60,7 @@
 
 .row-restoran {
   display: flex;
-  gap: 22px;
+  gap: 35px;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 16px;
@@ -104,7 +104,7 @@
 
 .row-hotel {
   display: flex;
-  gap: 48px;
+  gap: 54px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
@@ -207,3 +207,15 @@
     display: none;
   }
 }
+
+// .map-tab {
+//   @media screen and (max-width: 1023px) {
+//     display: none;
+//   }
+// }
+
+// .map-desctop {
+//   @media screen and (max-width: 1279px) {
+//     display: none;
+//   }
+// }
