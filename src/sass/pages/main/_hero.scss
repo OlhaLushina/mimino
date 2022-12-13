@@ -1,0 +1,116 @@
+.hero {
+  max-width: 414px;
+  height: 740px;
+
+  text-align: center;
+  padding-top: 181px;
+  padding-bottom: 21px;
+
+  outline: 1px solid black;
+  background-image: var(--gradient), url(..//..//../images/mobile/homepage/main-hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: var(--gradient), url(..//..//../images/mobile/homepage/main-hero-2x-mob.jpg);
+  }
+
+  @include tablet {
+    background-image: var(--gradient), url(..//..//../images/tablet/homepage/main-hero-tab.jpg);
+    max-width: 1024px;
+    height: 720px;
+    @include retina {
+      background-image: var(--gradient), url(..//..//../images/tablet/homepage/main-hero-2x-tab.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: var(--gradient), url(..//..//../images/desktop/homepage/main-hero.jpg);
+    max-width: 1280px;
+    @include retina {
+      background-image: var(--gradient), url(..//..//../images/desktop/homepage/main-hero-2x.jpg);
+    }
+  }
+}
+
+.hero__container {
+  position: relative;
+
+  // @include tablet {
+  //   padding: 188px ;
+  // }
+
+    // @include desktop {
+    // }
+}
+
+
+
+.hero__title {
+  font-family: var(--logo-fonts);
+  font-weight: 700;
+  font-size: 96px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: var(--color-text-light);
+
+  text-transform: uppercase;
+
+  margin-bottom: 24px;
+
+  @include tablet {
+    font-size: 128px;
+    line-height: calc(138 / 128);
+  }
+}
+
+.hero__undertitile {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--color-text-light);
+
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
+
+.hero__text {
+  font-family: var(--secondary-fonts);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  letter-spacing: 0.05em;
+  color: var(--color-text-light);
+
+  margin-bottom: 113px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+  }
+}
+
+.hero__list {
+  display: flex;
+  gap: 23px;
+  margin-left: 15px;
+  position: absolute;
+  bottom: 2%;
+
+  @include tablet {
+    margin-left: 48px;
+}
+@include desktop {
+position: absolute;
+top: 5%;
+right: 5%;
+}
+}
