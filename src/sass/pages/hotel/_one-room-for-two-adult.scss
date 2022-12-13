@@ -63,7 +63,7 @@
 }
 
 .one-room-for-two-subtitle {
-   font-family: 'Film P3';
+   font-family: var(--logo-fonts);
    font-weight: 700;
    font-size: 40px;
    line-height: 1.08;
@@ -107,7 +107,7 @@ margin-top: 62px;}
 }
 
 .one-room-for-two-description {
-   font-family: 'Montserrat';
+   font-family: var(--primary-fonts);
    font-weight: 600;
    font-size: 12px;
    line-height: 1.25;
