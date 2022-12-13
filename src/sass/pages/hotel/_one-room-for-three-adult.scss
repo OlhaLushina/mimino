@@ -12,7 +12,7 @@
 .triple-room {
   background-color: var(--seconadary-bg-color);
 }
-.pre-title {
+.additional-title {
   font-family: var(--secondary-fonts);
   font-weight: 400;
   font-size: 20px;
@@ -31,12 +31,13 @@
     margin-right: 57px;
   }
 }
-.right-pretitle {
+.right-addtitle {
   text-align: right;
 }
 .title-logo {
   text-align: right;
   margin-bottom: 32px;
+  margin-left: 258px;
   font-family: var(--logo-fonts);
   font-weight: 700;
   font-size: 40px;
@@ -45,11 +46,10 @@
   color: var(--color-text-logo);
   @include tablet {
     font-size: 64px;
-    margin-right: 17px;
     margin-bottom: 62px;
   }
   @include desktop {
-    margin-right: 57px;
+    margin-right: 40px;
     margin-bottom: 72px;
   }
 }
@@ -64,10 +64,11 @@
   @include tablet {
     font-size: 30px;
     line-height: 1.13;
-    margin-right: 43px;
+    margin-right: 45px;
   }
   @include desktop {
     font-size: 36px;
+    margin-right: 57px;
   }
 }
 .room-description {
@@ -81,9 +82,9 @@
   @include tablet {
     font-weight: 700;
     font-size: 16px;
-    margin-right: 20px;
+    //margin-right: 20px;
     width: 400px;
-    margin: 16px 20px 169px 557px;
+    margin: 16px 20px 169px 510px;
   }
   @include desktop {
     margin: 24px 110px 188px 600px;
@@ -141,12 +142,12 @@
 .button-item:first-child {
   margin-bottom: 16px;
 }
-.btn-link {
+.btn-detail {
   display: block;
   margin: 0 auto;
   padding: 14px 65px;
 }
-.btn {
+.btn-price {
   margin: 0 auto;
   display: block;
 }
