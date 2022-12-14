@@ -1,6 +1,4 @@
 .container {
-   padding-top: 32px;
-   padding-top: 32px;
    position: relative;
  }
 
@@ -11,13 +9,15 @@
 
 .one-room-for-two-info {
    display: block;
+
    @include tablet {
-      padding-left: 47px;
+      padding-left: 0px;
       margin-right: 26px;
       }
     
       @include desktop {
-         padding-left: 47px;
+      padding-left: 0px;
+      margin-right: 26px;
       }
 }
 
@@ -27,19 +27,24 @@
    font-size: 20px;
    line-height: 1.15;
    color: var(--color-text-gray);
-   width: 190px;
-   margin-right: 194px;
+   width: auto;
+   margin-right: 0;
+   margin-top: 32px;
 
    @include tablet {
    font-size: 32px;
    line-height: 1.16;
    margin-right: auto;
+   margin-top: 64px;
+   width: auto;
    }
  
    @include desktop {
       font-size: 32px;
       line-height: 1.16;
-      margin-right: auto;
+      margin-right: 0;
+      margin-top: 72px;
+      width: auto;
    }
 }
 
@@ -62,6 +67,7 @@
    font-size: 64px;
    margin-top: 40px;
    margin-right: 26px;
+   margin-top: 4px;
 }}
 
 .one-room-for-two-title {
@@ -83,7 +89,7 @@ margin-top: 62px;}
    font-size: 36px;
    line-height: 1.14;
    margin-right: 26px;
-   margin-top: 70px;
+   margin-top: 72px;
    }
 }
 
@@ -110,6 +116,9 @@ margin-top: 16px;
    font-size: 16px;
    margin-right: 26px;
    margin-top: 24px;
+   width: 400px;
+   height: 83px;
+   justify-content: space-around;
    }
 }
 
@@ -148,6 +157,7 @@ margin-bottom: 32px;
 display: flex;
 gap: 34px;
 width: 100px;
+margin-bottom: 28px;
 
 @include tablet {
    display: none;
@@ -163,16 +173,16 @@ margin-bottom: 28px;
 
 @include tablet {
    gap: 40px;
-   margin-left: 47px;
+   margin-left: 0px;
    margin-bottom: 28px;
-   margin-right: 266px;
+   margin-right: 15px;
    align-content: flex-end;
    }
  
    @include desktop {
       gap: 40px;
       margin-right: 130px;
-      margin-left: 85px;
+      margin-left: 0px;
       margin-bottom: 28px;
    }
 }
@@ -221,22 +231,36 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
             }}
 
             .two-button {
+               display: flex;
+               flex-wrap: wrap;
+               gap: 16px;
                align-content: center;
+               justify-content: center;
+               margin-bottom: 32px;
                @include tablet {
             align-content: center;
+            justify-content: end;
+            margin-bottom: 0;
                }
              
                @include desktop {
             align-content: center;
+            justify-content: end;
+            margin-bottom: 0;
                }}
 
-.two-arrow-desktop {
-   @include desktop {
-   display: none}
-   display: flex;
-   gap: 34px;
-   width: 100px;
-   margin-left: 536px;}
+.two-arrow-desktop
+{ 
+   @media screen and (max-width: 1279px)
+   {display: none;}
+margin-left: 419px;
+margin-bottom: 47px;
+margin-bottom: 12px;
+display: flex;
+gap: 34px;
+width: 100px;
+   }
+
 
       
 
