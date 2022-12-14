@@ -1,5 +1,4 @@
 .header {
-  z-index: 50;
   padding-top: 17px;
   padding-bottom: 31px;
   @include tablet {
@@ -99,7 +98,6 @@
     display: flex;
     align-items: center;
     padding: 8px;
-    box-sizing: border-box;
   }
 }
 .header-adress-wrap {
