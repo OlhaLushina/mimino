@@ -186,6 +186,9 @@
   @include tablet {
     right: 85px;
   }
+  @include desktop {
+    // right: 115px;
+  }
 }
 .left-oriented .slick-slider {
   position: relative;
@@ -215,19 +218,32 @@
   @include tablet {
     width: 428px;
   }
+  @include desktop {
+    width: 548px;
+  }
 }
+.slider-item {
+  width: 194px;
+  height: 194px;
+  @include desktop {
+    width: 254px;
+    height: 254px;
+  }
+}
+
 // .left-oriented .slick-list {
 //   position: relative;
 //   width: 300px;
 // }
-// .subdiv {
-//   width: 194px;
-//   height: 194px;
-// }
-.slider-item {
+.subdiv {
   width: 194px;
   height: 194px;
+  @include desktop {
+    width: 254px;
+    height: 254px;
+  }
 }
+
 /*.one-time {
   width: 274px;
   margin-bottom: 72px;
