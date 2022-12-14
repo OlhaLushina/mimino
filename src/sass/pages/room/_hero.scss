@@ -1,0 +1,71 @@
+.hotel-hero {
+  max-width: 100%;
+  height: 740px;
+
+  text-align: center;
+  padding-top: 181px;
+
+  outline: 1px solid black;
+  background-image:
+    url(..//..//../images/mobile/room/room-hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image:
+      url(..//..//../images/mobile/room/room-hero-2x-mob.jpg);
+  }
+
+  @include tablet {
+    background-image:
+      url(..//..//../images/tablet/room/room-hero-tab.jpg);
+    height: 720px;
+    padding-top: 188px;
+
+    @include retina {
+      background-image:
+        url(..//..//../images/tablet/room/room-hero-2x-tab.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image:
+      url(..//..//../images/desktop/room/room-hero.jpg);
+    padding-top: 164px;
+
+    @include retina {
+      background-image:
+        url(..//..//../images/desktop/room/room-hero-2x.jpg);
+    }
+  }
+}
+
+.one-time {
+  width: 400px;
+  margin: 0 auto;
+}
+
+// .room-hero-slider {}
+
+// .room-hero__arrow {}
+
+// .room-hero__wrap {}
+
+// .room-hero__span {}
+
+// .btn-light {}
+
+// .room-hero__btn {}
+
+// .room-hero__adress {}
+
+// .header-icon-check {}
+
+// .room-hero__list {}
+
+// .room-hero__item {}
+
+// .room-hero__link {}
+
+// .room-hero__icon {}
