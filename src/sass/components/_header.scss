@@ -26,8 +26,8 @@
   font-size: 36px;
   line-height: calc(39 / 36);
   letter-spacing: 0.3em;
-  // color: var(--color-text-light);
-  color: black;
+  color: var(--color-text-light);
+
   @include tablet {
     font-size: 40px;
     line-height: calc(43 / 40);
@@ -88,8 +88,7 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
-  // color: var(--color-text-light);
-  color: #000;
+  color: var(--color-text-light);
 }
 .header-phone-wrap {
   @include tablet {
