@@ -223,8 +223,26 @@ img {
   }
 }
 
-.coi_container-geometry {
-  position: relative;
+@media screen and (min-width: 414px) {
+  .coi_container {
+    width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .coi_container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .coi_container {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .coi_visually-hidden {
@@ -245,10 +263,12 @@ img {
 }
 
 .coi_card-text {
-  display: flex;
+  display: block;
+  text-align: end;
 }
 
 .coi_card-text__title {
+  margin-bottom: 6px;
   font-family: "Times New Roman";
   font-size: 20px;
   line-height: 1.15;
@@ -256,6 +276,7 @@ img {
 }
 
 .coi_card-text__mimino {
+  margin-bottom: 16px;
   font-family: "Film P3";
   font-weight: 700;
   font-size: 40px;
@@ -265,6 +286,8 @@ img {
 }
 
 .coi_card-text__text {
+  margin-bottom: 28px;
+  padding-left: 143px;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 12px;
@@ -273,45 +296,29 @@ img {
   color: var(--color-text-dark-secondary);
 }
 
-.coi_card-list__img {
-  width: 100%;
-  left: 0px;
-  top: 0px;
-  background-image: url(/src/images/mobile/homepage/modern-apartment-with-bedroom-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background: var(--color-text-lightgray);
-  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+.coi_card-list-hotel__imeges {
+  min-width: 200px;
+  max-width: 460px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media screen and (min-width: 414px) {
   .coi_card-list__img {
-    background-image: url(/src/images/mobile/homepage/modern-apartment-with-bedroom-2x-mob.jpg);
+    width: 244px;
+    height: 322px;
   }
 }
 @media screen and (min-width: 1024px) {
   .coi_card-list__img {
     width: 400px;
     height: 524px;
-    background-image: url(/src/images/tablet/homepage/modern-apartment-with-bedroom-tab.jpg);
-  }
-}
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
-  .coi_card-list__img {
-    background-image: url(/src/images/tablet/homepage/modern-apartment-with-bedroom-2x-tab.jpg);
-    width: 400px;
+    margin-top: -24px;
   }
 }
 @media screen and (min-width: 1280px) {
   .coi_card-list__img {
     width: 460px;
     height: 574px;
-    background-image: url(/src/images/desktop/homepage/modern-apartment-with-bedroom.jpg);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .coi_card-list__img {
-    background-image: url(/src/images/desktop/homepage/modern-apartment-with-bedroom-2x.jpg);
+    top: -100px;
   }
 }
 
@@ -327,19 +334,9 @@ img {
     align-items: center;
   }
 }
-@media screen and (min-width: 1280px) {
-  .coi_card-list-hotel {
-    display: flex;
-    align-items: center;
-  }
-}
-
 .coi_card-list-hotel__text {
   display: block;
-  padding-top: 123px;
-  padding-right: 45px;
-  padding-bottom: 116px;
-  padding-left: 379px;
+  padding-right: 22px;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 16px;
@@ -347,45 +344,36 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-text-brown);
 }
-
-.coi_card-list-hotel__img {
-  width: 200px;
-  height: 278px;
-  background-image: url(/src/images/mobile/homepage/hotel-hall-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background: var(--color-text-lightgray);
-  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
+@media screen and (min-width: 1024px) {
+  .coi_card-list-hotel__text {
+    display: flex;
+    align-items: center;
+    padding-right: 48px;
+  }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) {
+  .coi_card-list-hotel__text {
+    padding-right: 45px;
+    padding-left: 365px;
+  }
+}
+
+@media screen and (min-width: 414px) {
   .coi_card-list-hotel__img {
-    background-image: url(/src/images/mobile/homepage/hotel-hall-2x-mob.jpg);
+    width: 244px;
+    height: 322px;
   }
 }
 @media screen and (min-width: 1024px) {
   .coi_card-list-hotel__img {
-    width: 350px;
-    height: 500px;
-    background-image: url(/src/images/tablet/homepage/hotel-hall-tab.jpg);
-  }
-}
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
-  .coi_card-list-hotel__img {
-    background-image: url(/src/images/tablet/homepage/hotel-hall-2x-tab.jpg);
+    width: 400px;
+    height: 524px;
   }
 }
 @media screen and (min-width: 1280px) {
   .coi_card-list-hotel__img {
     width: 460px;
     height: 574px;
-    background-image: url(/src/images/desktop/homepage/hotel-hall.jpg);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .coi_card-list-hotel__img {
-    background-image: url(/src/images/desktop/homepage/hotel-hall-2x.jpg);
   }
 }
 
