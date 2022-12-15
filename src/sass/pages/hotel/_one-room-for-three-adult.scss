@@ -240,112 +240,64 @@
   }
 }
 
-/*.one-time {
-  width: 274px;
-  margin-bottom: 72px;
-  margin-left: auto;
-  background: #dadada;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  //outline: 2px solid tomato;
-}*/
-// .slick-track {
-//   display: flex;
-//   gap: 20px;
-//   background: #dadada;
-//   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-//   border-radius: 2px;
-//   background-color: var(--seconadary-bg-color);
-// }
-
-/*.slick-item {
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  width: 194px;
-}
-
-.slick-prev:before {
-  content: '';
-  background-image: url(../slick/images/cil_arrow-left.svg);
-}
 .slick-next:before {
   content: '';
-}
-
-.slick-next {
-  width: 32px;
-  height: 32px;
-  transform: translate(-150px, 100px);
-  background-image: url(../slick/images/cil_arrow-left.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slick-prev {
-  width: 32px;
-  height: 32px;
-  transform: translate(300px, 100px);
-  background-image: url(../slick/images/cil_arrow-right.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
-.slick-next:before {
-  content: '';
-  //background-image: url(.../slick/images/cil_arrow-right.svg);
 }
 
 .slick-next:before,
 .slick-arrow::before {
   content: '';
-  //background-image: url(.../slick/images/cil_arrow-right.svg);
 }
 
-// .slick-prev {
-//   width: 32px;
-//   height: 32px;
-//   background-image: url(../images/slick/cil_arrow-left.svg);
-// }
-
-// .slick-next {
-//   width: 32px;
-//   height: 32px;
-// }
 .slick-arrow {
-  //   margin: -30px 0px 0px 0px;
   z-index: 10;
   font-size: 0;
   width: 30px;
   height: 30px;
   border: none;
   position: absolute;
-  top: 220px;
-  &:hover,
-  &:focus {
-    fill: rgba(243, 198, 83, 1);
-  }
+  top: 114%;
   @include tablet {
-    bottom: -56px;
+    top: 121%;
+  }
+  @include desktop {
+    top: 119%;
   }
 }
-
-// &:hover,
-//   &:focus {
-//     color: rgba(243, 198, 83, 1);
-//   }
 
 .slick-arrow.slick-next {
   right: 18px;
   background: url('../images/slick/cil_arrow-right.svg') 0 0 / 100% no-repeat;
+  @include tablet {
+    right: 250px;
+  }
+  @include desktop {
+    right: 370px;
+  }
 }
 
 .left-oriented .slick-arrow.slick-next {
   right: 191px;
   background: url('../images/slick/cil_arrow-right.svg') 0 0 / 100% no-repeat;
+  @include tablet {
+    right: -85px;
+  }
 }
 .slick-arrow.slick-prev {
   left: 274px;
   background: url('../images/slick/cil_arrow-left.svg') 0 0 / 100% no-repeat;
+  @include tablet {
+    left: 85px;
+  }
 }
 
 .left-oriented .slick-arrow.slick-prev {
   left: 101px;
   background: url('../images/slick/cil_arrow-left.svg') 0 0 / 100% no-repeat;
+  @include tablet {
+    left: 415px;
+  }
+  @include desktop {
+    left: 535px;
+  }
 }
