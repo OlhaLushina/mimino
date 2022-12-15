@@ -173,16 +173,19 @@ justify-content: center;
 .slick-track{
   display: flex;
   align-items: flex-start;
+ 
 }
 .slider {
   position: relative;
   padding: 0px 32px;
+  
 }
 
 
 .slick-next.slick-arrow,
 .slick-next.slick-arrow {
   display: none;
+  font-family: auto;
 }
 
 .slider .slick-arrow{

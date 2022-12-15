@@ -802,6 +802,7 @@ h2 {
 .slick-next.slick-arrow,
 .slick-next.slick-arrow {
   display: none;
+  font-family: auto;
 }
 
 .slider .slick-arrow {
