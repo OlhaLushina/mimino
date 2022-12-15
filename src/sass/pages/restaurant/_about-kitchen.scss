@@ -1,0 +1,129 @@
+.section-about-kitchen {
+  position: relative;
+
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  @include desktop {
+    padding-bottom: 50px;
+  }
+}
+
+.about-kitchen-pre-tittle {
+  margin-bottom: 12px;
+
+  font-family: var(--secondary-fonts);
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--color-text-gray);
+
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    font-size: 32px;
+    line-height: 1.16;
+  }
+}
+
+.about-kitchen-logo {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-family: var(--logo-fonts);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: var(--color-text-logo);
+
+  @include tablet {
+    margin-bottom: 24px;
+
+    font-size: 64px;
+  }
+}
+
+.about-kitchen-content {
+  margin-bottom: 32px;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.tables {
+  display: flex;
+  align-items: center;
+}
+
+.about-kitchen-information {
+  width: 258px;
+  margin-bottom: 28px;
+
+  font-family: var(--primary-fonts);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-dark-secondary);
+
+  @include tablet {
+    font-size: 16px;
+    width: 439px;
+    margin-bottom: 142px;
+  }
+
+  @include desktop {
+    width: 518px;
+    margin-bottom: 162px;
+  }
+}
+
+.information {
+  margin-left: 20px;
+  margin-bottom: 0;
+  width: 163px;
+  color: var(--color-text-brown);
+
+  @include tablet {
+    margin-left: 48px;
+    width: 312px;
+  }
+
+  @include desktop {
+    margin-left: 32px;
+  }
+}
+
+.about-kitchen-food {
+  margin-left: auto;
+
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  @include tablet {
+    position: absolute;
+    top: -32px;
+    top: -32px;
+    right: 112px;
+    z-index: 11;
+    margin-left: 0;
+  }
+
+  @include desktop {
+    top: -33px;
+    top: -33px;
+    right: 180px;
+  }
+}
+
+.about-kitchen-photo {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
