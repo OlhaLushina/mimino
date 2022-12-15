@@ -291,28 +291,6 @@ h2 {
   justify-content: center;
 }
 
-.btn-light {
-  width: 236px;
-  height: 48px;
-  border: 2px solid var(--color-text-light);
-  border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.4);
-  font-family: var(--primary-fonts);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: var(--color-text-accent);
-}
-.btn-light:hover, .btn-light:focus {
-  background-color: var(--color-text-light);
-}
-@media screen and (min-width: 1024px) {
-  .btn-light {
-    height: 49px;
-  }
-}
-
 .slick-list {
   overflow: hidden;
 }
