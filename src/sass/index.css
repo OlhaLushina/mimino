@@ -619,7 +619,6 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #FFFFFF;
-  margin-bottom: 8px;
 }
 
 .img {
@@ -663,6 +662,7 @@ h2 {
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   display: flex;
+  background-color: transparent;
 }
 @media screen and (min-width: 414px) {
   .slick-slider .slick-track,
