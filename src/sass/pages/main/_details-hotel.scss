@@ -20,7 +20,6 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 margin-bottom: 8px;
-
 }
 
 .img {
@@ -90,7 +89,7 @@ color: var(--color-text-gray);
     width: 286px;
     }
     @include mobile {
-     
+      margin-top: 80px;
       align-items: center;
       text-align: center;
     }
@@ -159,61 +158,83 @@ overflow: hidden;
 }
 
 
-.room-oder {
-  border:  2px solid #FFFFFF;
-  @include mobile {
-  width: 236px;
-  height: 48px;
-  }
-  border-radius: 25px;
-  background: gba(0, 0, 0, 0.4);;
-  padding: 14px 26px;
-  font-family: var(--primary-fonts);
-font-weight: 700;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.02em;
-color: #F3C653;
-
-}
-
-.price-button {
-border:  2px solid #FFFFFF;
+.btn-light.link {
 text-decoration: none;
 display: flex;
 align-items: center;
 justify-content: center;
-  @include mobile {
-  width: 236px;
-  height: 48px;
-
-  }
 }
 
-.slick-arrow {
-  position: absolute;
-  top: 120%;
-  transform: translateY(-50%);
 
-  border: 0;
-  background-color: 0;
-  padding: 0;
-  cursor: pointer;
+
+
+.btn-light {
+    width: 236px;
+    height: 48px;
+    border: 2px solid var(--color-text-light);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: var(--primary-fonts);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: var(--color-text-accent);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-text-light);
+    }
+
+    @include tablet {
+        height: 49px;
+    }
 }
 
-.slick-prev.slick-arrow {
-  left: 85%;
-  top: 120%;
-  &::before{
-    content: "";
-  }
-
+.slick-list {
+  overflow: hidden;
 }
 
+.slick-track{
+  display: flex;
+  align-items: flex-start;
+}
+.slider {
+  position: relative;
+  padding: 0px 32px;
+}
+
+// .slider .slick-track {
+// display: block;
+// }
+
+.slick-next.slick-arrow,
 .slick-next.slick-arrow {
-  right:7%;
-  top: 120%;
-    &::before{
-    content: "";
-  }
+  display: none;
 }
+
+.slider .slick-arrow{
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 17px;
+  margin-top: 32px;
+}
+.slider .slick-prev.slick-arrow {
+  left: 85%;
+  background: url("/src/images/slick/cil_arrow-left.svg") 0 0 / 100% no-repeat;
+}
+.slider .slick-next.slick-arrow {
+  right: 5%;
+  background: url("/src/images/slick/cil_arrow-right.svg") 0 0 / 100% no-repeat;
+}
+.slider-item {
+  right: 0;
+}
+
+
+
+
+

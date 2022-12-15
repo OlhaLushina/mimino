@@ -1,8 +1,12 @@
-$('.variable-width').slick({
-  dots: true,
+$('.slider').slick({
+  arrows: true,
+  dots: false,
+  adaptiveHeight: true,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  centerMode: true,
-  variableWidth: true
+  slidesToScroll: 1,
+  easing: 'ease',
+  variableWidth: true,
+  initialSlide: 1
 });

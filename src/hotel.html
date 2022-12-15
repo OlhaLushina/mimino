@@ -28,8 +28,8 @@
       <include src="./partials/pages/main/about-hotel.html"></include>
       <include src="./partials/pages/main/details-hotel.html"></include>
       <include src="./partials/pages/main/contacts.html"></include>
-      <section class="hotel-details">
-        <div class="hotel-details-box container">
+      <section class="hotel-details cotainer">
+        <div class="hotel-details-box">
             <div class="details-head">
               <h1 class="logo">Mimiho</h1>
               <h2>Готель</h2>
@@ -38,8 +38,8 @@
                 amet sint. Velit officia consequat duis enim velit mollit.
               </p>
             </div>
-            <div class="variable-width">
-              <div class="details-menu-item">
+            <div class="slider">
+              <div class="slider-item">
                 <picture class="details-reception">
                   <source
                     srcset="
@@ -71,7 +71,7 @@
                   />
                 </picture>
               </div>
-              <div class="details-menu-item">
+              <div class="slider-item">
                 <picture class="details-breakfast">
                   <source
                     srcset="
@@ -103,7 +103,7 @@
                   />
                 </picture>
               </div>
-              <div class="details-menu-item">
+              <div class="slider-item">
                 <picture class="details-hotel-room">
                   <source
                     srcset="
@@ -138,11 +138,10 @@
             </div>
           </div>
           <div class="button-set">
-            <button class="room-oder" type="button" >Забронювати номер</button>
-            <a type="button" class="price-button" href="#">Переглянути ціни</a>
+            <button class="btn-light" type="button">Забронювати номер</button>
+            <a class="btn-light link" href="#">Переглянути ціни</a>
           </div>
-        </div>
-      </section>
+          </section>
     </main>
     <include src="./partials/footer.html"></include>
     <!--slick jquery-->
