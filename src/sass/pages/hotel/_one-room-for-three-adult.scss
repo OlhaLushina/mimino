@@ -1,4 +1,5 @@
 .container-triple-room {
+  outline: solid 2px red;
   @include tablet {
     position: relative;
   }
@@ -11,7 +12,7 @@
 
   @include tablet {
     padding-top: 66px;
-    padding-bottom: 40px;
+    padding-bottom: 104px;
   }
 
   @include desktop {
@@ -124,10 +125,6 @@
   }
 }
 
-// .slider-wrap {
-//   display: flex;
-//   margin-top: 176px;
-// }
 .one-time {
   margin-left: auto;
   margin-bottom: 30px;
@@ -147,13 +144,22 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
   }
 }
-
+.left-oriented .slider-wrap {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 //button set
 .button-set {
+  margin-top: 72px;
   @include tablet {
-    margin-top: 39px;
+    margin-top: 0;
   }
 }
 
@@ -174,71 +180,159 @@
 
 //slick
 
-/*.one-time {
-  width: 274px;
-  margin-bottom: 72px;
-  margin-left: auto;
-  background: #dadada;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  //outline: 2px solid tomato;
-}*/
+.slick-slider {
+  position: relative;
+  right: -15px;
+  @include tablet {
+    right: 85px;
+  }
+  @include desktop {
+    // right: 115px;
+  }
+}
+.left-oriented .slick-slider {
+  position: relative;
+  right: 102px;
+  @include tablet {
+    right: 85px;
+  }
+}
 .slick-track {
+  position: relative;
   display: flex;
-  gap: 20px;
-  background: #dadada;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  background-color: var(--seconadary-bg-color);
+  gap: 16px;
+  @include tablet {
+    gap: 40px;
+  }
 }
-
-/*.slick-item {
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+.left-oriented .slick-track {
+  left: 100px;
+  @include tablet {
+    left: 0px;
+  }
+}
+.slick-list {
+  position: relative;
+  left: 86px;
+  width: 300px;
+  @include tablet {
+    width: 428px;
+  }
+  @include desktop {
+    width: 548px;
+  }
+}
+.slider-item {
   width: 194px;
+  height: 194px;
+  @include desktop {
+    width: 254px;
+    height: 254px;
+  }
 }
 
-.slick-prev:before {
-  content: '';
-  background-image: url(../slick/images/cil_arrow-left.svg);
-}
-.slick-next:before {
-  content: '';
+.subdiv {
+  width: 194px;
+  height: 194px;
+  @include desktop {
+    width: 254px;
+    height: 254px;
+  }
 }
 
-.slick-next {
-  width: 32px;
-  height: 32px;
-  transform: translate(-150px, 100px);
-  background-image: url(../slick/images/cil_arrow-left.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slick-prev {
-  width: 32px;
-  height: 32px;
-  transform: translate(300px, 100px);
-  background-image: url(../slick/images/cil_arrow-right.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
 .slick-next:before {
   content: '';
-  //background-image: url(.../slick/images/cil_arrow-right.svg);
 }
 
 .slick-next:before,
 .slick-arrow::before {
   content: '';
-  //background-image: url(.../slick/images/cil_arrow-right.svg);
 }
 
-.slick-prev {
-  width: 32px;
-  height: 32px;
-  background-image: url(../images/slick/cil_arrow-left.svg);
+.slick-arrow {
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  position: absolute;
+  opacity: 1;
+  top: 114%;
+  @include tablet {
+    top: 121%;
+  }
+  @include desktop {
+    top: 119%;
+  }
 }
 
-.slick-next {
-  width: 32px;
-  height: 32px;
+.slick-arrow.slick-next {
+  right: 18px;
+  background: url('../images/slick/cil_arrow-right.svg') 0 0 / 100% no-repeat;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    background: url('../images/slick/hovered-right.svg') 0 0 / 100% no-repeat;
+  }
+  @include tablet {
+    right: 250px;
+  }
+  @include desktop {
+    right: 370px;
+  }
 }
+
+.left-oriented .slick-arrow.slick-next {
+  right: 191px;
+  background: url('../images/slick/cil_arrow-right.svg') 0 0 / 100% no-repeat;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    background: url('../images/slick/hovered-right.svg') 0 0 / 100% no-repeat;
+  }
+  @include tablet {
+    right: -85px;
+  }
+}
+.slick-arrow.slick-prev {
+  left: 274px;
+  background: url('../images/slick/cil_arrow-left.svg') 0 0 / 100% no-repeat;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    background: url('../images/slick/hovered-left.svg') 0 0 / 100% no-repeat;
+  }
+  @include tablet {
+    left: 85px;
+  }
+}
+
+.left-oriented .slick-arrow.slick-prev {
+  left: 101px;
+  background: url('../images/slick/cil_arrow-left.svg') 0 0 / 100% no-repeat;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    background: url('../images/slick/hovered-left.svg') 0 0 / 100% no-repeat;
+  }
+  @include tablet {
+    left: 415px;
+  }
+  @include desktop {
+    left: 535px;
+  }
+}
+// .slick-prev.slick-disabled {
+//   background: url('../images/slick/white_arrow-left.svg') 0 0 / 100% no-repeat;
+// }
+// .slick-next.slick-disabled {
+//   background: url('../images/slick/white_arrow-right.svg') 0 0 / 100% no-repeat;
+// }
