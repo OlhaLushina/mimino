@@ -1,0 +1,6 @@
+.room-hero {
+  margin-top: -143px;
+  @include tablet {
+    margin-top: -100px;
+  }
+}
