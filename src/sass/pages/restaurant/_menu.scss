@@ -1,6 +1,7 @@
 .menu {
     padding-top: 32px;
     padding-bottom: 32px;
+    background-color: var(--seconadary-bg-color);
 
     @include tablet {
         padding-top: 58px;
