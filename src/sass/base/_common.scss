@@ -20,7 +20,6 @@ body {
   color: var(--color-text-primary);
   background-color: var(--primary-bg-color);
   letter-spacing: 0.03em;
-  font-family: 'Montserrat';
 }
 
 .list {
@@ -33,7 +32,6 @@ body {
   text-decoration: none;
 }
 
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -45,20 +43,4 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-* {
-  margin: 0;  
-  padding: 0; 
-  box-sizing: border-box; 
-}
-
-ul {
-  list-style: none; 
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
