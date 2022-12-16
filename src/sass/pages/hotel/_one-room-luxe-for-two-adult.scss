@@ -1,9 +1,9 @@
-.luxe-room-container {
+.room-for-two-container {
   position: relative;
   // outline: 2px solid tomato;
 }
 
-.room-luxe-for-two {
+.room-for-two {
   background-color: var(--primary-bg-color);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -41,6 +41,7 @@
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: var(--color-text-logo);
+  text-transform: uppercase;
 
   @include tablet {
     margin-bottom: 62px;
@@ -60,6 +61,11 @@
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--color-text-primary);
+  text-transform: uppercase;
+
+  & span {
+    text-transform: lowercase;
+  }
 
   @include tablet {
     margin-bottom: 16px;
@@ -99,7 +105,7 @@
   }
 }
 
-.room-luxe-for-two .appartment-image {
+.room-for-two .appartment-image {
   margin-bottom: 32px;
   margin-left: auto;
   width: 244px;

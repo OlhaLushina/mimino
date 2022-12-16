@@ -47,6 +47,7 @@
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: var(--color-text-logo);
+  text-transform: uppercase;
 
   @include tablet {
     font-size: 64px;
@@ -66,6 +67,7 @@
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--color-text-primary);
+  text-transform: uppercase;
 
   @include tablet {
     font-size: 30px;
