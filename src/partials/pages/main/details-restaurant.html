@@ -1,0 +1,121 @@
+
+        <section class="restaurant-details">
+  <div class="container">
+     <div class="restaurant-button-set">
+      <button class="btn-light" type="button">Забронювати столик</button>
+      <a class="btn-light link" href="#">Переглянути меню</a>
+    </div>
+    <div class="restaurant-details-box">
+      <div class="restaurant-details-head">
+        <p class="restaurant-details-logo">Mimino</p>
+        <h2 class="restaurant-details-title">Ресторан</h2>
+        <p class="restaurant-details-text">
+         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+        </p>
+      </div>
+      <div class="slider">
+        <div class="slider-item">
+          <picture class="details-meat">
+            <source
+              srcset="
+                ./images/desktop/homepage/meat.jpg ,
+                ./images/desktop/homepage/meat-2x.jpg 
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/homepage/meat-tab.jpg ,
+                ./images/tablet/homepage/meat-2x-tab.jpg 
+              "
+              media="(min-width:1024px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/homepage/meat-mob.jpg ,
+                ./images/mobile/homepage/meat-2x-mob.jpg 
+              "
+              media="(min-width:414px)"
+            />
+            <img
+              src="./images/mobile/homepage/meat-2x-mob.jpg"
+              class="restaurant-details-img"
+              alt="Стейк"
+              width="270"
+              height="270"
+            />
+          </picture>
+        </div>
+        <div class="slider-item">
+          <picture class="details-dish">
+            <source
+              srcset="
+                ./images/desktop/homepage/dish-1.jpg ,
+                ./images/desktop/homepage/dish-1-2x.jpg 
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/homepage/dish-1-tab.jpg ,
+                ./images/tablet/homepage/dish-1-2x-tab.jpg 
+              "
+              media="(min-width:1024px)"
+            />
+            <source
+              srcset="./images/tablet/homepage/dish-1-tab.jpg, 
+              ./images/tablet/homepage/dish-1-2x-tab.jpg
+                "
+              media="(min-width:414px)"
+            />
+            <img
+              src="./images/tablet/homepage/dish-1-2x-tab.jpg "
+              class="img"
+              alt="Страва на дошці"
+              width="162"
+              height="270"
+            />
+          </picture>
+        </div>
+        <div class="slider-item">
+          <picture class="details-bowl">
+            <source
+              srcset="
+                ./images/desktop/homepage/dish-2.jpg ,
+                ./images/desktop/homepage/dish-2-2x.jpg 
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/homepage/dish-2-tab.jpg ,
+                ./images/tablet/homepage/dish-2-2x-tab.jpg 
+              "
+              media="(min-width:1024px)"
+            />
+            <source
+               srcset="
+                ./images/tablet/homepage/dish-2-tab.jpg ,
+                ./images/tablet/homepage/dish-2-2x-tab.jpg 
+              "
+              media="(min-width:414px)" 
+            />
+            <img
+              src="./images/tablet/homepage/dish-2-2x-tab.jpg"
+              class="img"
+              alt="Боул"
+              width="270"
+              height="270"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</section>
+    <script type="module" src="./js/slick.js"></script>
+    <script src="./js/modal-book-room.js"></script>
+    <script src="./js/modal-book-table.js"></script>
+  </body>
+</html>
