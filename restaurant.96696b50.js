@@ -1,2 +1,2 @@
 !function(){var o={openModalBookTableBtn:document.querySelector("[data-modal-book-table-open]"),closeModalBookTableBtn:document.querySelector("[data-modal-book-table-close]"),modalBookTable:document.querySelector("[data-modal-book-table]")};function e(){o.modalBookTable.classList.toggle("is-hidden")}o.openModalBookTableBtn.addEventListener("click",e),o.closeModalBookTableBtn.addEventListener("click",e)}();
-//# sourceMappingURL=index.851727c7.js.map
+//# sourceMappingURL=restaurant.96696b50.js.map
