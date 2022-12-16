@@ -2,15 +2,15 @@
   position: relative;
 
   padding-top: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 72px;
 
-@include tablet {
-  padding-top: 120px;   
-  padding-bottom: 32px;
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 96px;
   }
 
   @include desktop {
-  padding-bottom: 50px;
+    padding-bottom: 104px;
   }
 }
 
@@ -22,12 +22,12 @@
   line-height: 1.15;
   color: var(--color-text-gray);
 
-@include tablet {
-  margin-top: 0;
-  margin-bottom: 4px; 
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 4px;
 
-  font-size: 32px;
-  line-height: 1.16;
+    font-size: 32px;
+    line-height: 1.16;
   }
 }
 
@@ -42,10 +42,10 @@
   letter-spacing: 0.3em;
   color: var(--color-text-logo);
 
-@include tablet {
-  margin-bottom: 24px; 
-  
-  font-size: 64px;
+  @include tablet {
+    margin-bottom: 24px;
+
+    font-size: 64px;
   }
 }
 
@@ -53,7 +53,7 @@
   margin-bottom: 32px;
 
   @include tablet {
-  width: 100%;  
+    width: 100%;
   }
 }
 
@@ -73,15 +73,15 @@
   letter-spacing: 0.02em;
   color: var(--color-text-dark-secondary);
 
-@include tablet {
-  font-size: 16px;
-  width: 439px;
-  margin-bottom: 142px;
+  @include tablet {
+    font-size: 16px;
+    width: 439px;
+    margin-bottom: 142px;
   }
 
   @include desktop {
-  width: 518px;
-  margin-bottom: 162px;
+    width: 518px;
+    margin-bottom: 162px;
   }
 }
 
@@ -91,13 +91,13 @@
   width: 163px;
   color: var(--color-text-brown);
 
-@include tablet {
-  margin-left: 48px;
-  width: 312px;
+  @include tablet {
+    margin-left: 48px;
+    width: 312px;
   }
 
-  @include desktop{
-  margin-left: 32px;
+  @include desktop {
+    margin-left: 32px;
   }
 }
 
@@ -107,17 +107,17 @@
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 
-@include tablet {
-  position: absolute;
-  top: -152px; /*-32px;*/
-  right: 112px;
-  z-index: 11;
-  margin-left: 0;
+  @include tablet {
+    position: absolute;
+    top: -152px; /*-32px;*/
+    right: 112px;
+    z-index: 11;
+    margin-left: 0;
   }
 
   @include desktop {
-  top: -153px; /*-33px;*/
-  right: 180px;
+    top: -153px; /*-33px;*/
+    right: 180px;
   }
 }
 
@@ -125,3 +125,9 @@
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
+// .section-about-restaurant .slick-track {
+//   overflow: hidden;
+// }
+// .section-about-restaurant .slick-track {
+//   z-index: 12;
+// }
