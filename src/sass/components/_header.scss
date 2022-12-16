@@ -1,0 +1,135 @@
+.header {
+  padding-top: 17px;
+  padding-bottom: 31px;
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 33px;
+  }
+}
+.header_container {
+  display: block;
+}
+
+.header_navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav-wrap {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  font-family: 'Logofont';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(39 / 36);
+  letter-spacing: 0.3em;
+  color: var(--color-text-light);
+  // color: #000;
+  @include tablet {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+  }
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.hotel-list-link,
+.rest-header-link {
+  font-family: var(--primary-fonts);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--color-text-accent);
+  padding-right: 6px;
+  @include tablet {
+    margin-right: 32px;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
+.hotel-list-link {
+  margin-left: 20px;
+  @include tablet {
+    margin-left: 72px;
+    padding: 0;
+  }
+}
+.header-icon-phone {
+  display: flex;
+  align-items: center;
+}
+.hotel-phone-num,
+.rest-phone-num {
+  display: none;
+  @include tablet {
+    display: flex;
+  }
+}
+.rest-phone-num {
+  margin-left: 8px;
+}
+.hotel-phone-num {
+  &:last-child {
+    margin-left: 16px;
+  }
+  &:not(:last-child) {
+    margin-left: 8px;
+  }
+}
+.phone-num-link {
+  font-family: var(--primary-fonts);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+  color: var(--color-text-light);
+  // color: #000;
+}
+.header-phone-wrap {
+  @include tablet {
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+}
+.header-adress-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 9px;
+  @include tablet {
+    display: none;
+  }
+}
+.header_adress {
+  display: flex;
+  align-items: center;
+  padding: 8px 6px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  font-family: var(--primary-fonts);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.01em;
+  color: var(--color-text-address);
+}
+.header-icon-check {
+  margin-right: 8px;
+}
+.header-soc-wrap {
+  display: none;
+  @include desktop {
+    display: flex;
+    gap: 23px;
+    margin-left: 60px;
+  }
+}
+// ---------------------------------

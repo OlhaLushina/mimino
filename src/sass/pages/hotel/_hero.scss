@@ -1,35 +1,42 @@
 .hotel-hero {
   max-width: 100%;
   height: 740px;
-
+  margin-top: -143px;
   text-align: center;
   padding-top: 181px;
   padding-bottom: 21px;
 
   outline: 1px solid black;
-  background-image: var(--gradient), url(..//..//../images/mobile/room/room-hero-mob.jpg);
+  background-image: var(--gradient),
+    url(..//..//../images/mobile/room/room-hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @include retina {
-    background-image: var(--gradient), url(..//..//../images/mobile/room/room-hero-2x-mob.jpg);
+    background-image: var(--gradient),
+      url(..//..//../images/mobile/room/room-hero-2x-mob.jpg);
   }
 
   @include tablet {
-    background-image: var(--gradient), url(..//..//../images/tablet/room/room-hero-tab.jpg);
+    margin-top: -100px;
+    background-image: var(--gradient),
+      url(..//..//../images/tablet/room/room-hero-tab.jpg);
     height: 720px;
 
     @include retina {
-      background-image: var(--gradient), url(..//..//../images/tablet/room/room-hero-2x-tab.jpg);
+      background-image: var(--gradient),
+        url(..//..//../images/tablet/room/room-hero-2x-tab.jpg);
     }
   }
 
   @include desktop {
-    background-image: var(--gradient), url(..//..//../images/desktop/room/room-hero.jpg);
+    background-image: var(--gradient),
+      url(..//..//../images/desktop/room/room-hero.jpg);
 
     @include retina {
-      background-image: var(--gradient), url(..//..//../images/desktop/room/room-hero-2x.jpg);
+      background-image: var(--gradient),
+        url(..//..//../images/desktop/room/room-hero-2x.jpg);
     }
   }
 }
