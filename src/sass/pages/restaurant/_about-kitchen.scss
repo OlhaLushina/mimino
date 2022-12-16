@@ -2,17 +2,17 @@
   position: relative;
 
   padding-top: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 52px;
 
   background-color: var(--primary-bg-color);
 
   @include tablet {
-    padding-top: 120px;
-    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 96px;
   }
 
   @include desktop {
-    padding-bottom: 50px;
+    padding-bottom: 104px;
   }
 }
 
@@ -111,14 +111,14 @@
 
   @include tablet {
     position: absolute;
-    top: -152px; /*-32px;*/
+    top: -52px; /*-32px;*/
     right: 112px;
     z-index: 11;
     margin-left: 0;
   }
 
   @include desktop {
-    top: -153px; /*-33px;*/
+    top: -53px; /*-33px;*/
     right: 180px;
   }
 }
