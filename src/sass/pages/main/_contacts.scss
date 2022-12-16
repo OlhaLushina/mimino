@@ -157,7 +157,7 @@
 }
 
 .adress {
-  width: 260px;
+  max-width: 260px;
   height: 76px;
   background-color: #ffffff;
   border: 0.5px solid #f3c653;
@@ -195,13 +195,6 @@
   margin-right: 10px;
 }
 
-// .right-colum {
-//   @include tablet {
-//     width: 535px;
-//     height: 412px;
-//     background-color: red;
-//   }
-// }
 
 .map-mob {
   @include tablet {
