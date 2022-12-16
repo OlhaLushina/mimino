@@ -19,10 +19,13 @@
   }
 
   @include tablet {
+
     margin-top: -100px;
+
     background-image: var(--gradient),
       url(..//..//../images/tablet/restaurant/restaurant-hero-tab.jpg);
     height: 720px;
+    padding-top: 188px;
 
     @include retina {
       background-image: var(--gradient),
@@ -33,6 +36,9 @@
   @include desktop {
     background-image: var(--gradient),
       url(..//..//../images/desktop/restaurant/restaurant-hero.jpg);
+
+    padding-top: 164px;
+
 
     @include retina {
       background-image: var(--gradient),
@@ -75,7 +81,7 @@
 }
 
 .rest-hero__text {
-  font-family: var(--secondary-fonts);
+  font-family: var(--secondary-bold-fonts);
   font-weight: 700;
   font-size: 32px;
   line-height: calc(37 / 32);
@@ -93,17 +99,74 @@
 .rest-hero__list {
   display: flex;
   gap: 23px;
-  margin-left: 15px;
-  position: absolute;
-  bottom: 2%;
+  margin-top: 61px;
 
   @include tablet {
-    margin-left: 48px;
+    margin-top: 28px;
+    padding-bottom: 0;
   }
 
   @include desktop {
-    position: absolute;
-    top: 5%;
-    right: 5%;
+    padding-top: 0;
+    display: none;
   }
 }
+
+
+.rest-hero__adress {
+  padding-top: 0;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 8px 6px;
+    width: 285px;
+    height: 56px;
+
+    margin-right: 127px;
+
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    font-family: var(--primary-fonts);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.01em;
+    color: var(--color-text-address);
+  }
+
+  @include desktop {
+    margin-right: 297px;
+  }
+}
+
+.header-icon-check {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.rest-hero__btn {
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  @include tablet {
+    &:not(:last-child) {
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tablet-wrap {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
+}
+

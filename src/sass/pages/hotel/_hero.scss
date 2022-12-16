@@ -4,7 +4,6 @@
   margin-top: -143px;
   text-align: center;
   padding-top: 181px;
-  padding-bottom: 21px;
 
   outline: 1px solid black;
   background-image: var(--gradient),
@@ -19,10 +18,13 @@
   }
 
   @include tablet {
+
     margin-top: -100px;
+
     background-image: var(--gradient),
       url(..//..//../images/tablet/room/room-hero-tab.jpg);
     height: 720px;
+    padding-top: 188px;
 
     @include retina {
       background-image: var(--gradient),
@@ -33,6 +35,9 @@
   @include desktop {
     background-image: var(--gradient),
       url(..//..//../images/desktop/room/room-hero.jpg);
+
+    padding-top: 164px;
+
 
     @include retina {
       background-image: var(--gradient),
@@ -56,6 +61,8 @@
   @include tablet {
     font-size: 128px;
     line-height: calc(138 / 128);
+
+    margin-bottom: 32px;
   }
 }
 
@@ -66,28 +73,84 @@
   letter-spacing: 0.02em;
   color: var(--color-text-light);
 
-  margin-bottom: 40px;
+  margin-bottom: 242px;
 
   @include tablet {
     font-size: 20px;
     line-height: calc(24 / 20);
+    margin-bottom: 218px;
   }
 }
 
 .hotel-hero__list {
   display: flex;
   gap: 23px;
-  margin-left: 15px;
-  position: absolute;
-  bottom: 2%;
+  margin-top: 61px;
 
   @include tablet {
-    margin-left: 48px;
+    margin-top: 28px;
   }
 
   @include desktop {
-    position: absolute;
-    top: 5%;
-    right: 5%;
+    padding-top: 0;
+    display: none;
   }
 }
+
+.hotel-hero__adress {
+  padding-top: 0;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 8px 6px;
+    width: 285px;
+    height: 56px;
+
+    margin-right: 127px;
+
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    font-family: var(--primary-fonts);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.01em;
+    color: var(--color-text-address);
+  }
+
+  @include desktop {
+    margin-right: 297px;
+  }
+}
+
+.header-icon-check {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.hotel-hero__btn {
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  @include tablet {
+    &:not(:last-child) {
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tablet-wrap {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
+}
+
