@@ -1,0 +1,2 @@
+!function(){var o={openModalRoomPriceBtn:document.querySelector("[data-modal-room-price-open]"),closeModalRoomPriceBtn:document.querySelector("[data-modal-room-price-close]"),modalRoomPrice:document.querySelector("[data-modal-room-price]")};function e(){o.modalRoomPrice.classList.toggle("is-hidden")}o.openModalRoomPriceBtn.addEventListener("click",e),o.closeModalRoomPriceBtn.addEventListener("click",e)}();
+//# sourceMappingURL=hotel.84428b00.js.map

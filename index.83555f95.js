@@ -1,0 +1,2 @@
+!function(){var o={openModalBookRoomBtn:document.querySelector("[data-modal-book-room-open]"),closeModalBookRoomBtn:document.querySelector("[data-modal-book-room-close]"),modalBookRoom:document.querySelector("[data-modal-book-room]")};function e(){o.modalBookRoom.classList.toggle("is-hidden")}o.openModalBookRoomBtn.addEventListener("click",e),o.closeModalBookRoomBtn.addEventListener("click",e)}();
+//# sourceMappingURL=index.83555f95.js.map
