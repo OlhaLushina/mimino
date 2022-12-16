@@ -4,9 +4,10 @@ $('.slider').slick({
   adaptiveHeight: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
   slidesToScroll: 1,
   easing: 'ease',
   variableWidth: true,
-  initialSlide: 1
+  initialSlide: 1,
+  slidesToShow: 1,
+
 });

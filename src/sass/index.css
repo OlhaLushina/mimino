@@ -619,6 +619,7 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+  margin-bottom: 8px;
 }
 
 .img {
@@ -801,7 +802,6 @@ h2 {
 
 .slick-next.slick-arrow,
 .slick-next.slick-arrow {
-  display: none;
   font-family: auto;
 }
 

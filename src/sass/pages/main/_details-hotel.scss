@@ -19,6 +19,7 @@ font-size: 24px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #FFFFFF;
+margin-bottom: 8px;
 
 }
 
@@ -185,8 +186,8 @@ justify-content: center;
 
 .slick-next.slick-arrow,
 .slick-next.slick-arrow {
-  display: none;
   font-family: auto;
+  
 }
 
 .slider .slick-arrow{
@@ -205,6 +206,7 @@ justify-content: center;
 .slider .slick-next.slick-arrow {
   right: 5%;
   background: url("/src/images/slick/cil_arrow-right.svg") 0 0 / 100% no-repeat;
+ 
 }
 .slider-item {
   right: 0;
