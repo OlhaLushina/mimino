@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-transform: uppercase;
+
 
   @include retina {
     background-image: var(--gradient),
@@ -84,6 +84,7 @@
   color: var(--color-text-light);
 
   margin-bottom: 113px;
+  text-transform: uppercase;
 
   @include tablet {
     font-size: 36px;

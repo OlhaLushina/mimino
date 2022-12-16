@@ -10,7 +10,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-transform: uppercase;
 
   @include retina {
     background-image: var(--gradient),
