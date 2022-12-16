@@ -57,6 +57,13 @@
 
     margin-bottom: 14px;
     display: block;
+
+    @include tablet {
+      font-size: 36px;
+        line-height: calc(41 /36);
+      margin-bottom: 24px;
+
+    }
 }
 
 .room-hero__span {
