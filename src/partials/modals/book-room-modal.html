@@ -1,11 +1,11 @@
 <!-------  room-modal ------->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-book-room>
   <!--is-hidden -->
   <div class="modal-room">
-    <button class="room-close" type="button" data-modal-close>
+    <button class="room-close" type="button" data-modal-book-room-close>
       <!-- modal-close -->
       <svg class="room-close-icon" width="24" height="24">
-        <!-- <use href="../../images/icons.svg#icon-x"></use>  -->
+        <use href="./images/icon-defs.svg#icon-close-btn"></use>
       </svg>
     </button>
     <p class="modal-room-title">ЗАБРОНЮВАТИ НОМЕР</p>
@@ -20,7 +20,8 @@
                   name="user-name"
                   class="room-input"
                   placeholder="Ваше ім’я"
-                  maxlength="10"
+                  maxlength="20"
+                  pattern="^[а-яА-Я]+\s[а-яА-Я]+$"
                   required
                   id="user-name"
                 />
@@ -32,11 +33,12 @@
             <label for="user-tel" class="input-room-label">
               <div class="input-wrap">
                 <input
-                  type="email"
+                  type="tel"
                   name="user-tel"
                   class="room-input"
                   placeholder="+38 (___) ___-__-__"
-                  maxlength="10"
+                  maxlength="15"
+                  pattern="^[0-9+()-\s]+"
                   required
                   id="user-tel"
                 />

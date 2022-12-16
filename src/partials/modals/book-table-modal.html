@@ -1,0 +1,96 @@
+<!-------  table-modal ------->
+<div class="backdrop is-hidden" data-modal-book-table>
+  <!--is-hidden -->
+  <div class="modal">
+    <button class="modal-close" type="button" data-modal-book-table-close>
+      <!-- modal-close -->
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="./images/icon-defs.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <p class="modal-title">ЗАБРОНЮВАТИ СТОЛИК</p>
+    <form>
+      <div class="line-box">
+        <div class="box">
+          <div class="modal-field">
+            <label for="user-name" class="input-label">
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  name="user-name"
+                  class="modal-input"
+                  placeholder="Ваше ім’я"
+                  pattern="^[а-яА-Я]+\s[а-яА-Я]+$"
+                  maxlength="20"
+                  required
+                  id="user-name"
+                />
+              </div>
+              <span>На кого забронювати столик?</span>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="input-label">
+              <div class="input-wrap">
+                <input
+                  type="tel"
+                  name="user-email"
+                  class="modal-input"
+                  placeholder="+38 (___) ___-__-__"
+                  maxlength="15"
+                  pattern="^[0-9+()-\s]+"
+                  required
+                  id="user-tel"
+                />
+              </div>
+              <span>Номер телефону</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="modal-field">
+            <label for="user-number" class="input-label">
+              <div class="input-wrap">
+                <input
+                  type="number"
+                  name="user-number"
+                  class="modal-input"
+                  placeholder="2"
+                  maxlength="10"
+                  required
+                  id="user-number"
+                />
+                <svg class="modal-input-icon" width="24" height="24">
+                  <!-- <use href="../images/icons.svg#icon-arrow"></use> -->
+                </svg>
+              </div>
+              <span>Столик на яку кількість осіб?</span>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="input-label">
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  name="user-tel"
+                  class="modal-input"
+                  placeholder="Сьогодні"
+                  maxlength="10"
+                  required
+                  id="user-tel"
+                />
+                <svg class="modal-input-icon" width="24" height="24">
+                  <!-- <use href="../images/icons.svg#icon-arrow"></use> -->
+                </svg>
+              </div>
+              <span>На яку дату бронювати?</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button class="button-send" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </form>
+  </div>
+</div>

@@ -109,16 +109,14 @@
 
 @include tablet {
   position: absolute;
-  top: -32px;
-  top: -32px;
+  top: -152px; /*-32px;*/
   right: 112px;
   z-index: 11;
   margin-left: 0;
   }
 
   @include desktop {
-  top: -33px;
-  top: -33px;
+  top: -153px; /*-33px;*/
   right: 180px;
   }
 }

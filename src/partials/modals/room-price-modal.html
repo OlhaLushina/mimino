@@ -1,11 +1,11 @@
 <!-------  price-modal ------->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-room-price>
   <!--is-hidden -->
   <div class="price">
-    <button class="price-close" type="button" data-modal-close>
+    <button class="price-close" type="button" data-modal-room-price-close>
       <!-- modal-close -->
       <svg class="price-close-icon" width="24" height="24">
-        <!-- <use href="../../images/icons.svg#icon-x"></use>  -->
+        <use href="./images/icon-defs.svg#icon-close-btn"></use>
       </svg>
     </button>
     <p class="price-title">ЦІНИ НА НОМЕР</p>
@@ -21,7 +21,8 @@
                 name="user-name"
                 class="modal-price-input"
                 placeholder="1"
-                maxlength="10"
+                maxlength="20"
+                pattern="^[а-яА-Я]+\s[а-яА-Я]+$"
                 required
                 id="user-name"
               />
@@ -36,7 +37,7 @@
           <label for="user-email" class="input-price-label">
             <div class="input-wrap">
               <input
-                type="email"
+                type="text"
                 name="user-email"
                 class="modal-price-input"
                 placeholder="1000"

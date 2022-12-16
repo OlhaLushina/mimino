@@ -1,6 +1,11 @@
 .header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   padding-top: 17px;
   padding-bottom: 31px;
+  z-index: 99;
   @include tablet {
     padding-top: 24px;
     padding-bottom: 33px;

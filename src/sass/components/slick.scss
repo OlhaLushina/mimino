@@ -1,0 +1,186 @@
+//slick
+
+.slick-slider {
+    position: relative;
+    right: -15px;
+
+    @include tablet {
+        right: 85px;
+    }
+
+    @include desktop {
+        // right: 115px;
+    }
+}
+
+.left-oriented .slick-slider {
+    position: relative;
+    right: 102px;
+
+    @include tablet {
+        right: 85px;
+    }
+}
+
+.slick-track {
+    position: relative;
+    display: flex;
+    gap: 16px;
+
+    @include tablet {
+        gap: 40px;
+    }
+}
+
+.left-oriented .slick-track {
+    left: 100px;
+
+    @include tablet {
+        left: 0px;
+    }
+}
+
+.slick-list {
+    position: relative;
+    left: 86px;
+    width: 300px;
+
+    @include tablet {
+        width: 428px;
+    }
+
+    @include desktop {
+        width: 548px;
+    }
+}
+
+.slider-item {
+    width: 194px;
+    height: 194px;
+
+    @include desktop {
+        width: 254px;
+        height: 254px;
+    }
+}
+
+.subdiv {
+    width: 194px;
+    height: 194px;
+
+    @include desktop {
+        width: 254px;
+        height: 254px;
+    }
+}
+
+.slick-next:before {
+    content: '';
+}
+
+.slick-next:before,
+.slick-arrow::before {
+    content: '';
+}
+
+.slick-arrow {
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    opacity: 1;
+    top: 114%;
+
+    @include tablet {
+        top: 121%;
+    }
+
+    @include desktop {
+        top: 119%;
+    }
+}
+
+.slick-arrow.slick-next {
+    right: 18px;
+    background: url('../images/slick/cil_arrow-right.svg') 0 0 / 100% no-repeat;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+
+    &:hover,
+    &:focus {
+        background: url('../images/slick/hovered-right.svg') 0 0 / 100% no-repeat;
+    }
+
+    @include tablet {
+        right: 250px;
+    }
+
+    @include desktop {
+        right: 370px;
+    }
+}
+
+.left-oriented .slick-arrow.slick-next {
+    right: 191px;
+    background: url('../images/slick/cil_arrow-right.svg') 0 0 / 100% no-repeat;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+
+    &:hover,
+    &:focus {
+        background: url('../images/slick/hovered-right.svg') 0 0 / 100% no-repeat;
+    }
+
+    @include tablet {
+        right: -85px;
+    }
+}
+
+.slick-arrow.slick-prev {
+    left: 274px;
+    background: url('../images/slick/cil_arrow-left.svg') 0 0 / 100% no-repeat;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+
+    &:hover,
+    &:focus {
+        background: url('../images/slick/hovered-left.svg') 0 0 / 100% no-repeat;
+    }
+
+    @include tablet {
+        left: 85px;
+    }
+}
+
+.left-oriented .slick-arrow.slick-prev {
+    left: 101px;
+    background: url('../images/slick/cil_arrow-left.svg') 0 0 / 100% no-repeat;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+
+    &:hover,
+    &:focus {
+        background: url('../images/slick/hovered-left.svg') 0 0 / 100% no-repeat;
+    }
+
+    @include tablet {
+        left: 415px;
+    }
+
+    @include desktop {
+        left: 535px;
+    }
+}
+
+// .slick-prev.slick-disabled {
+//   background: url('../images/slick/white_arrow-left.svg') 0 0 / 100% no-repeat;
+// }
+// .slick-next.slick-disabled {
+//   background: url('../images/slick/white_arrow-right.svg') 0 0 / 100% no-repeat;
+// }

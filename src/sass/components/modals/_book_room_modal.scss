@@ -1,0 +1,330 @@
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    transition: opacity 250ms linear, visibility 1000ms linear;
+    z-index: 99;
+}
+
+.modal-room {
+    width: 414px;
+    height: 780px;
+    border-radius: 2px;
+    background-color: #FFFDEE;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    transition: transform 250ms linear, border-radius 250ms linear;
+    padding: 60px 15px;
+
+    @media screen and (min-width: 414px) {
+        width: 414px;
+        height: 780px;
+        padding: 60px 15px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 712px;
+        height: 638px;
+        padding: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 712px;
+        height: 638px;
+        padding: 60px;
+    }
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal-room {
+    transform: translate(-50%, -50%) rotate(-360deg);
+    border-radius: 50%;
+}
+
+.room-close {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #00000023;
+    border-radius: 50%;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #000000;
+    fill: currentColor;
+
+    &-icon:hover {
+        fill: #2196F3;
+    }
+}
+
+.room-close-icon:hover {
+    fill: #2196F3;
+}
+
+.modal-room-title {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 414px) {
+        font-size: 24px;
+        line-height: 1.16;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 40px;
+        line-height: 1.15;
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 40px;
+        line-height: 1.15;
+        margin-bottom: 36px;
+    }
+}
+
+.line-room-box {
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        gap: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+
+
+// .room-box {
+//     gap: 20px;
+// }
+
+.modal-room-field {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 414px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 28px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 28px;
+    }
+}
+
+.invis {
+    margin-right: 0;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.room-input {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    width: 100%;
+    height: 54px;
+    background-color: #FFFDEE;
+    border: 1px solid #C79002;
+    border-radius: 2px;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: #808080;
+    padding-left: 12px;
+    outline: transparent;
+
+    &:focus {
+        border-color: #2196F3;
+    }
+
+    @media screen and (min-width: 414px) {
+        width: 100%;
+        height: 54px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 288px;
+        height: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 288px;
+        height: 64px;
+    }
+}
+
+.modal-text {
+    width: 100%;
+    height: 120px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 16px;
+
+    // resize: none;
+    &::placeholder {
+        font-size: 13px;
+        color: teal;
+    }
+}
+
+.input-room-label {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #C79002;
+}
+
+.input-room-label span {
+    display: block;
+    margin-top: 8px;
+    margin-left: 12px;
+}
+
+.room-input-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: #C79002;
+    fill: currentColor;
+    transform: translateY(-50%);
+
+    .modal-input:focus+& {
+        fill: #2196F3;
+    }
+}
+
+.visually-hidden {
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+// .is-hidden {
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+// }
+
+.check-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.none {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196F3;
+    padding-left: 5px;
+}
+
+.check-text span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+
+    .input-check:checked+& {
+        background-color: #2196F3;
+        border-color: transparent;
+        fill: #FFFFFF;
+    }
+}
+
+.button-send-room {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 2px;
+    width: 384px;
+    height: 64px;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    border: 1px solid #F3C653;
+    margin-top: 40px;
+
+    @media screen and (min-width: 414px) {
+        width: 384px;
+        height: 64px;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-top: 40px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 592px;
+        height: 64px;
+        font-size: 24px;
+        line-height: 1.208;
+        margin-top: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 592px;
+        height: 64px;
+        font-size: 24px;
+        line-height: 1.208;
+        margin-top: 12px;
+    }
+}
