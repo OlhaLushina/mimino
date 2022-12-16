@@ -12,6 +12,8 @@
 }
 
 .hotel-details-title {
+    margin-bottom: 8px;
+    margin-right: 20px;
     font-family: var(--primary-fonts);
     font-style: normal;
     font-weight: 700;
@@ -28,6 +30,7 @@
 }
 
 .hotel-details-text {
+    width: 549px;
     font-family: var(--secondary-fonts);
     max-width: 595px;
     font-weight: 600;
