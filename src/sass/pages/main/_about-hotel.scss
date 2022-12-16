@@ -6,25 +6,23 @@
   @include tablet {
     padding-top: 120px;
     padding-bottom: 96px;
-    left: 0px;
-    top: 2578px;
+    // left: 0px;
+    // top: 2578px;
   }
 
   @include desktop {
     padding-top: 120px;
     padding-bottom: 119px;
-    left: 0px;
-    top: 2615px;
+    // left: 0px;
+    // top: 2615px;
     border: 1px solid #000000;
   }
 }
 
 .coi_container {
-  @media screen and (min-width: 414px) {
-    width: 414px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  width: 414px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include tablet {
     width: 1024px;
@@ -94,6 +92,10 @@
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
   color: var(--color-text-logo);
+  @include tablet {
+    margin-bottom: 24px;
+    font-size: 64px;
+  }
 }
 .coi_card-text__text {
   margin-bottom: 28px;

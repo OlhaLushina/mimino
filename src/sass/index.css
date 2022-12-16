@@ -205,26 +205,20 @@ img {
   .coi_about-hotel {
     padding-top: 120px;
     padding-bottom: 96px;
-    left: 0px;
-    top: 2578px;
   }
 }
 @media screen and (min-width: 1280px) {
   .coi_about-hotel {
     padding-top: 120px;
     padding-bottom: 119px;
-    left: 0px;
-    top: 2615px;
     border: 1px solid #000000;
   }
 }
 
-@media screen and (min-width: 414px) {
-  .coi_container {
-    width: 414px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.coi_container {
+  width: 414px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1024px) {
   .coi_container {
@@ -302,6 +296,12 @@ img {
   line-height: 1.075;
   letter-spacing: 0.3em;
   color: var(--color-text-logo);
+}
+@media screen and (min-width: 1024px) {
+  .coi_card-text__mimino {
+    margin-bottom: 24px;
+    font-size: 64px;
+  }
 }
 
 .coi_card-text__text {
