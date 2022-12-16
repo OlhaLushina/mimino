@@ -198,12 +198,8 @@ img {
 
 .coi_about-hotel {
   background: var(--primary-bg-color);
-}
-@media screen and (min-width: 414px) {
-  .coi_about-hotel {
-    padding-top: 18px;
-    padding-bottom: 72px;
-  }
+  padding-top: 18px;
+  padding-bottom: 72px;
 }
 @media screen and (min-width: 1024px) {
   .coi_about-hotel {
@@ -292,7 +288,7 @@ img {
 
 .coi_card-text__title {
   margin-bottom: 6px;
-  font-family: "Times New Roman";
+  font-family: var(--secondary-fonts);
   font-size: 20px;
   line-height: 1.15;
   color: var(--color-text-gray);
@@ -300,7 +296,7 @@ img {
 
 .coi_card-text__mimino {
   margin-bottom: 16px;
-  font-family: "Film P3";
+  font-family: var(--logo-fonts);
   font-weight: 700;
   font-size: 40px;
   line-height: 1.075;
@@ -311,7 +307,7 @@ img {
 .coi_card-text__text {
   margin-bottom: 28px;
   padding-left: 143px;
-  font-family: "Montserrat";
+  font-family: var(--primary-fonts);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -324,11 +320,9 @@ img {
   max-width: 460px;
 }
 
-@media screen and (min-width: 414px) {
-  .coi_card-list__img {
-    width: 244px;
-    height: 322px;
-  }
+.coi_card-list__img {
+  width: 244px;
+  height: 322px;
 }
 @media screen and (min-width: 1024px) {
   .coi_card-list__img {
@@ -344,11 +338,9 @@ img {
   }
 }
 
-@media screen and (min-width: 414px) {
-  .coi_card-list-hotel {
-    display: flex;
-    align-items: center;
-  }
+.coi_card-list-hotel {
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   .coi_card-list-hotel {
@@ -359,7 +351,7 @@ img {
 .coi_card-list-hotel__text {
   display: block;
   padding-right: 22px;
-  font-family: "Montserrat";
+  font-family: var(--primary-fonts);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -380,11 +372,9 @@ img {
   }
 }
 
-@media screen and (min-width: 414px) {
-  .coi_card-list-hotel__img {
-    width: 244px;
-    height: 322px;
-  }
+.coi_card-list-hotel__img {
+  width: 244px;
+  height: 322px;
 }
 @media screen and (min-width: 1024px) {
   .coi_card-list-hotel__img {
