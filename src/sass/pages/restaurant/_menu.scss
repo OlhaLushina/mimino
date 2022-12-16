@@ -1,0 +1,145 @@
+.menu {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include tablet {
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+
+    @include desktop {
+        padding-top: 58px;
+        padding-bottom: 60px;
+    }
+}
+
+.menu__block {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.menu__table {
+    width: 100%;
+    height: auto;
+
+    @include tablet {
+        width: 411px;
+    }
+
+    @include desktop {
+        width: 485px;
+    }
+}
+
+.menu__title {
+    font-family: var(--secondary-bold-fonts);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+    margin-bottom: 32px;
+
+    @include tablet {
+        margin-bottom: 40px;
+    }
+}
+
+.menu__subtitle {
+    padding-bottom: 20px;
+    font-family: var(--secondary-bold-fonts);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--color-text-primary);
+}
+
+.menu__dishes,
+.menu__drinks {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--color-text-primary);
+}
+
+.menu__dishes {
+    padding-bottom: 4px;
+}
+
+.menu__drinks {
+    padding-bottom: 12px;
+}
+
+.menu__description {
+    //width: 260px;
+    width: 53.6%;
+    padding-bottom: 12px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-text-primary);
+}
+
+.menu__volume {
+    //width: 85px;
+    //width: 113px;
+    width: 23.3%;
+    padding-bottom: 12px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color-text-primary);
+}
+
+.menu__price {
+    //width: 85px;
+    //width: 113px;
+    width: 23.3%;
+    padding-bottom: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color-text-primary);
+}
+
+.menu__block-btn {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.menu__btn {
+    width: 236px;
+    height: 49px;
+    margin: 32 auto 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    border: 2px solid var(--primary-bg-color);
+    border-radius: 25px;
+    background-color: var(--color-text-primary);
+    color: var(--color-text-accent);
+
+    @include tablet {
+        margin-top: 60px;
+        margin-right: 0;
+    }
+
+    @include desktop {
+        margin-top: 40px;
+    }
+}
