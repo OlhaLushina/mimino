@@ -1,7 +1,7 @@
 .hotel-hero {
   max-width: 100%;
   height: 740px;
-
+  margin-top: -143px;
   text-align: center;
   padding-top: 181px;
 
@@ -18,6 +18,9 @@
   }
 
   @include tablet {
+
+    margin-top: -100px;
+
     background-image: var(--gradient),
       url(..//..//../images/tablet/room/room-hero-tab.jpg);
     height: 720px;
@@ -32,7 +35,9 @@
   @include desktop {
     background-image: var(--gradient),
       url(..//..//../images/desktop/room/room-hero.jpg);
+
     padding-top: 164px;
+
 
     @include retina {
       background-image: var(--gradient),
@@ -148,3 +153,4 @@
     align-items: baseline;
   }
 }
+

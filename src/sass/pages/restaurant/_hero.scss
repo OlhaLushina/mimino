@@ -1,7 +1,7 @@
 .rest-hero {
   max-width: 100%;
   height: 740px;
-
+  margin-top: -143px;
   text-align: center;
   padding-top: 181px;
   padding-bottom: 21px;
@@ -19,6 +19,9 @@
   }
 
   @include tablet {
+
+    margin-top: -100px;
+
     background-image: var(--gradient),
       url(..//..//../images/tablet/restaurant/restaurant-hero-tab.jpg);
     height: 720px;
@@ -33,7 +36,9 @@
   @include desktop {
     background-image: var(--gradient),
       url(..//..//../images/desktop/restaurant/restaurant-hero.jpg);
+
     padding-top: 164px;
+
 
     @include retina {
       background-image: var(--gradient),
@@ -107,6 +112,7 @@
   }
 }
 
+
 .rest-hero__adress {
   padding-top: 0;
   display: none;
@@ -163,3 +169,4 @@
     align-items: baseline;
   }
 }
+
