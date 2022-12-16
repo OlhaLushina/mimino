@@ -11,6 +11,7 @@
   background-position: center;
   background-size: cover;
 
+
   @include retina {
     background-image: var(--gradient),
       url(..//..//../images/mobile/homepage/main-hero-2x-mob.jpg);
@@ -83,6 +84,7 @@
   color: var(--color-text-light);
 
   margin-bottom: 113px;
+  text-transform: uppercase;
 
   @include tablet {
     font-size: 36px;

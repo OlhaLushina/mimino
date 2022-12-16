@@ -4,6 +4,8 @@
   padding-top: 16px;
   padding-bottom: 20px;
 
+  background-color: var(--primary-bg-color);
+
   @include tablet {
     padding-top: 120px;
     padding-bottom: 32px;
@@ -109,16 +111,14 @@
 
   @include tablet {
     position: absolute;
-    top: -32px;
-    top: -32px;
+    top: -152px; /*-32px;*/
     right: 112px;
     z-index: 11;
     margin-left: 0;
   }
 
   @include desktop {
-    top: -33px;
-    top: -33px;
+    top: -153px; /*-33px;*/
     right: 180px;
   }
 }

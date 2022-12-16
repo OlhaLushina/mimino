@@ -1,5 +1,5 @@
-/*
-.hotel-hero {
+
+.room-hero {
   max-width: 100%;
   height: 740px;
 
@@ -7,36 +7,39 @@
   padding-top: 181px;
 
   outline: 1px solid black;
-  background-image:
+  background-image: var(--gradient-light),
     url(..//..//../images/mobile/room/room-hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-transform: uppercase;
 
   @include retina {
-    background-image:
+    background-image: var(--gradient-light),
       url(..//..//../images/mobile/room/room-hero-2x-mob.jpg);
   }
 
   @include tablet {
-    background-image:
+    background-image: var(--gradient-light),
       url(..//..//../images/tablet/room/room-hero-tab.jpg);
     height: 720px;
     padding-top: 188px;
 
     @include retina {
-      background-image:
+      background-image: var(--gradient-light),
         url(..//..//../images/tablet/room/room-hero-2x-tab.jpg);
     }
   }
 
   @include desktop {
     background-image:
+      var(--gradient-light),
       url(..//..//../images/desktop/room/room-hero.jpg);
     padding-top: 164px;
 
     @include retina {
       background-image:
+        var(--gradient-light),
         url(..//..//../images/desktop/room/room-hero-2x.jpg);
     }
   }
@@ -71,11 +74,3 @@
 
 // .room-hero__icon {}
 
-.room-hero {
-  margin-top: -143px;
-  @include tablet {
-    margin-top: -100px;
-  }
-}
-
-*/
