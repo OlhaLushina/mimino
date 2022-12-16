@@ -1,0 +1,121 @@
+<!-------  room-modal ------->
+<div class="backdrop is-hidden" data-modal>
+  <!--is-hidden -->
+  <div class="modal-room">
+    <button class="room-close" type="button" data-modal-close>
+      <!-- modal-close -->
+      <svg class="room-close-icon" width="24" height="24">
+        <!-- <use href="../../images/icons.svg#icon-x"></use>  -->
+      </svg>
+    </button>
+    <p class="modal-room-title">ЗАБРОНЮВАТИ НОМЕР</p>
+    <form>
+      <div class="main-box">
+        <div class="line-room-box">
+          <div class="modal-room-field">
+            <label for="user-name" class="input-room-label">
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  name="user-name"
+                  class="room-input"
+                  placeholder="Ваше ім’я"
+                  maxlength="10"
+                  required
+                  id="user-name"
+                />
+              </div>
+              <span>На кого забронювати номер?</span>
+            </label>
+          </div>
+          <div class="modal-room-field">
+            <label for="user-tel" class="input-room-label">
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  name="user-tel"
+                  class="room-input"
+                  placeholder="+38 (___) ___-__-__"
+                  maxlength="10"
+                  required
+                  id="user-tel"
+                />
+              </div>
+              <span>Номер телефону</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="line-room-box">
+          <div class="room-box">
+            <div class="modal-room-field">
+              <label for="user-number" class="input-room-label">
+                <div class="input-wrap">
+                  <input
+                    type="number"
+                    name="user-number"
+                    class="room-input"
+                    placeholder="Двомісний люкс"
+                    maxlength="10"
+                    required
+                    id="user-number"
+                  />
+                  <svg class="room-input-icon" width="24" height="24">
+                    <!-- <use href="../images/icons.svg#icon-arrow"></use> -->
+                  </svg>
+                </div>
+                <span>Категорія номеру</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-room-box">
+          <div class="modal-room-field">
+            <label for="user-date" class="input-room-label">
+              <div class="input-wrap">
+                <input
+                  type="number"
+                  name="user-date"
+                  class="room-input"
+                  placeholder="Сьогодні"
+                  maxlength="10"
+                  required
+                  id="user-date"
+                />
+                <svg class="room-input-icon" width="24" height="24">
+                  <!-- <use href="../images/icons.svg#icon-arrow"></use> -->
+                </svg>
+              </div>
+              <span>Дата заїзду</span>
+            </label>
+          </div>
+
+          <div class="modal-room-field">
+            <label for="user-dat" class="input-room-label">
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  name="user-dat"
+                  class="room-input"
+                  placeholder="Сьогодні"
+                  maxlength="10"
+                  required
+                  id="user-dat"
+                />
+                <svg class="room-input-icon" width="24" height="24">
+                  <!-- <use href="../images/icons.svg#icon-arrow"></use> -->
+                </svg>
+              </div>
+              <span>Дата виїзду</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button class="button-send-room" type="submit">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
